@@ -1,0 +1,42 @@
+.faq_cta_part{
+    text-align: center;
+    h5{
+        font-size: 16px;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        font-weight: 600;
+        color: $white;
+        margin-bottom: 12px;
+    }
+    h2{
+        font-weight: 600;
+        color: $white;
+    }
+    .cu_btn{
+        margin-top: 33px;
+        border: 1px solid $white;
+        &:hover{
+            border: 1px solid $heading_color;
+            background-color: $heading_color;
+            color: $white;
+            img{
+                -webkit-filter: brightness(0) invert(1);
+                filter: brightness(0) invert(1);
+            }
+        }
+        &.base_hover{
+            &:hover{
+                border: 1px solid $base_color;
+                background-color: $base_color;
+                color: $white;
+                img{
+                    -webkit-filter: brightness(0) invert(1);
+                    filter: brightness(0) invert(1);
+                }
+            } 
+        }
+    }
+    &.cta_bg{
+        background-image: url(../img/cta_bg_1.png);
+    }
+}

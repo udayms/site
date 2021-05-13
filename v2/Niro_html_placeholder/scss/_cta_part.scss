@@ -1,0 +1,152 @@
+.cta_part{
+    .cta_part_iner{
+        padding: 85px 75px;
+        background-color: #ffeaea;
+        border-radius: 5px;
+        position: relative;
+        @media #{$xs_mobile}{
+            padding: 35px 20px;
+        }
+        @media #{$large_mobile}{
+            
+        }
+        @media #{$tab_device}{
+            
+        }
+        .cta_icon_1{
+            bottom: -71px;
+            right: -148px;
+            position: absolute;
+            z-index: -1;
+            @media #{$xs_mobile}{
+                display: none;
+            }
+            @media #{$large_mobile}{
+                max-width: 100px;
+                right: -15px;
+                bottom: -15px;
+            }
+            @media #{$tab_device}{
+                max-width: 100px;
+                right: -15px;
+                bottom: -15px;
+            }
+            @media #{$medium_device}{
+                max-width: 145px;
+                right: -35px;
+                bottom: -35px;
+            }
+        }
+    }
+    .cta_part_content{
+        h5{
+            font-size: 16px;
+            letter-spacing: 2px;
+            color: $base_color;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+        }
+        h2{
+            font-size: 36px;
+            font-weight: 600;
+            letter-spacing: -2px;
+            margin-bottom: 27px;
+            @media #{$mobile}{
+                font-size: 25px;
+                line-height: 1.3;
+                margin-bottom: 15px;
+            }
+            @media #{$tab_device}{
+                font-size: 30px;
+                line-height: 1.3;
+                margin-bottom: 15px;
+            }
+        }
+        .cu_btn{
+            margin-top: 30px;
+            letter-spacing: 1px;
+        }
+    }
+    .cta_part_img{
+        text-align: right;
+        @media #{$mobile}{
+            text-align: center;
+            margin-top: 30px;
+        }
+    }
+    &.cta_bg{
+        padding: 85px 0;
+        background-color: #ffeaea;
+    }
+    &.dark_version{
+        background-image: -moz-linear-gradient( 0deg, rgb(254,66,47) 0%, rgb(254,81,150) 100%);
+        background-image: -webkit-linear-gradient( 0deg, rgb(254,66,47) 0%, rgb(254,81,150) 100%);
+        background-image: -ms-linear-gradient( 0deg, rgb(254,66,47) 0%, rgb(254,81,150) 100%);
+        height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        h2{
+            color: $white;
+            font-size: 48px;
+            margin-bottom: 20px;
+            font-weight: 400;
+            @media #{$mobile}{
+                font-size: 30px;
+                margin-bottom: 0;
+            }
+        }
+        .cu_btn{
+            &.white_bg{
+                color: $heading_color;
+                &:hover{
+                    border: 1px solid #040911;
+                    background-color: #040911;
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+
+//cta part css
+.cta_style_2{
+    .cta_part_content{
+        text-align: center;
+        h5{
+            font-size: 16px;
+            color: #ca063a;
+        }
+        h2{
+            font-weight: 700;
+            color: $white;
+            font-size: 48px;
+            @media #{$tab}{
+                font-size: 25px;
+                letter-spacing: 0;
+            }
+        }
+        .cu_btn{
+            display: inline-flex;
+            margin-top: 12px;
+            img{
+                margin-left: 12px;
+            }
+        }
+    }
+    &.cta_style_2{
+        h5{
+            font-family: $font_2;
+        }
+        h2{
+            font-family: $font_3;
+            margin-bottom: 33px;
+        }
+        .btn_1:hover {
+            background-color: #ca063a;
+            border: 1px solid #ca063a;
+            color: #fff;
+        }
+    }
+}

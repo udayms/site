@@ -1,0 +1,71 @@
+.client_list_section{
+    padding: 120px 0 75px;
+        @media #{$mobile}{
+            padding: 70px 0 50px;
+        }
+        @media #{$tab_device}{
+            padding: 70px 0 50px;
+        }
+        @media #{$medium_device}{
+            padding: 70px 0 50px;
+        }
+        .section_tittle{
+            h2{
+                font-family: $font_2;
+                font-weight: 400;
+            }
+        }
+    &.bark_background{
+        background-color: #040911;
+    }
+    .single_client_logo{
+        height: 90px;
+        display: flex;
+        align-items: center;
+        img{
+            max-width: 135px;
+            margin: 0 auto;
+        }
+    }
+    &.client_lis_grid{
+        padding: 120px 0 75px;
+        @media #{$mobile}{
+            padding: 70px 0 50px;
+        }
+        @media #{$tab_device}{
+            padding: 70px 0 50px;
+        }
+        @media #{$medium_device}{
+            padding: 70px 0 50px;
+        }
+        .overlay_effect {
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: .5s;
+            &.is_show{
+                transform: scaleX(1);
+            }
+        }
+        .section_tittle{
+            h2{
+                font-family: $font_2;
+                font-weight: 400;
+            }
+        }
+    }
+    &.client_list_style_2{
+        padding: 55px 0;
+        @media #{$mobile}{
+            padding: 10px 0;
+        }
+        @media #{$tab_device}{
+            padding: 10px 0;
+        }
+        @media #{$medium_device}{
+            padding: 10px 0;
+        }
+    }
+    &.bg_img{
+        @include background ('../img/newsletter_bg.png');
+    }
+}

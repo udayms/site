@@ -1,0 +1,485 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Niro - Creative Portfolio & Agency HTML5 Template</title>
+    <meta name="description" content="">
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="img/favicon.png">
+
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet'>
+
+    <!-- Syntax Highlighter -->
+    <link rel="stylesheet" type="text/css" href="syntax-highlighter/styles/shCore.css" media="all">
+    <link rel="stylesheet" type="text/css" href="syntax-highlighter/styles/shThemeDefault.css" media="all">
+
+    <!-- Font Awesome CSS-->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- Normalize/Reset CSS-->
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <!-- Main CSS-->
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body id="welcome">
+
+    <aside class="left-sidebar">
+        <div class="logo">
+            <a href="#welcome">
+                <img src="img/new-logo2.png" alt="">
+            </a>
+        </div>
+        <nav class="left-nav">
+            <ul id="nav">
+                <li class="current"><a href="#welcome">Welcome</a></li>
+                <li><a href="#installation">Installation</a></li>
+                <li><a href="#tmpl-structure">Structure</a></li>
+                <li><a href="#css-structure">CSS Files</a></li>
+                <li><a href="#gallery">Portfolio Gallery</a></li>
+                <li><a href="#javascript">JavaScript Libraries</a></li>
+                <li><a href="#contact-form">Contact Form</a></li>
+                <li><a href="#credit">Source and Credit</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <div id="main-wrapper">
+        <div class="main-content">
+            <section id="welcome">
+                <div class="content-header">
+                    <h1>Niro - Creative Portfolio & Agency HTML5 Template</h1>
+                </div>
+                <div class="welcome">
+
+                    <h2 class="twenty">Niro - Creative Portfolio & Agency HTML5 Template</h2>
+
+                    <p>Firstly, a huge thanks for purchasing this template, your support is truly appreciated!</p>
+
+                    <p>This document covers the installation and use of this theme and often reveals answers to common problems and issues - read this document thoroughly if you are experiencing any difficulties. If you have any questions that are beyond the scope of this document, feel free to email at <code><a href="mailto:inbox@droitthemes.com">inbox@droitthemes.com</a></code> Thank you so much!</p>
+                </div>
+
+                <div class="features">
+                    <h2 class="twenty">Template Features</h2>
+
+                    <ul>
+                        <li>Clean &amp; Simple Design</li>
+                        <li>HTML5 &amp; CSS3</li>
+                        <li>Parallax Section</li>
+                        <li>Fully Responsive Design</li>
+                        <li>PHP Powered Working Contact Form</li>
+                        <li>All files are well commented</li>
+                        <li>Cross Browser Compatible with IE11+, Firefox, Safari, Opera, Chrome</li>
+                        <li>Extensive Documentation</li>
+                    </ul>
+                </div>
+
+            </section>
+
+            <section id="installation">
+                <div class="content-header">
+                    <h1>Niro - Creative Portfolio & Agency HTML5 Template</h1>
+                </div>
+                <h2 class="title">Installing Template.</h2>
+
+                <div class="section-content">
+                    <ol>
+                        <li>After unzip the download pack, you'll found a Template Folder with all the files.</li>
+                        <li>You can view this Template in any browser, you can display or edit the Template without an internet connection.(May not wotrk fonts and google map).</li>
+                        <li>The only section that will not work is the Contact Section which contains PHP code and requires a server environment for send messages.</li>
+                        <li>Now go to your cpanel or open your FTP Client (like <a target="_blank" href="https://filezilla-project.org/download.php">Filezilla</a>) and upload the content of the Template on your server root.</li>
+                        <li>Once the files are done uploading go to www.yourdomainname.com/index.html</li>
+                    </ol>
+                </div>
+
+            </section>
+
+
+            <section id="tmpl-structure">
+                <h2 class="title">Template Structure</h2>
+                <p class="fifteen">All information within the main content area is nested within a body tag. The general template structure is pretty the same throughout the template. Here is the general structure of main page (index.html).</p>
+                <pre class="brush: html">
+                    <!-- preloader -->
+                    <div class="preloader-wrapper">
+
+                    </div>
+                    <!-- preloader end -->
+
+                    <!-- header part -->
+                    <div class="offcanvas_overlay"></div>
+                    <header class="header_part">
+
+                    </header>
+                    <!-- header part end -->
+
+                    <!--  off_canvus_menu -->
+                    <div class="off_canvus_item">
+                        
+                    </div>
+                    <!--  off canvus menu -->
+
+                    <!--  section content-->
+                    <section class="section_padding">
+                    </section>
+                    <!--  section content end-->
+
+                    <!-- footer part here -->
+                    <footer class="footer_section">
+                    </footer>
+                </pre>
+            </section>
+
+
+            <section id="css-structure">
+                <h2 class="title">CSS Files and Structure</h2>
+                <p class="fifteen">These are the css files that are loaded into templates in <strong>Head Section</strong>.</p>
+                <pre class="brush: html">
+		                <!--
+					    CSS
+					    ============================================= -->
+                        <link rel="icon" href="img/favicon.png" type="image/png">
+                        <!-- Bootstrap CSS -->
+                        <link rel="stylesheet" href="css/bootstrap.min.css" />
+                        <!-- animate CSS -->
+                        <link rel="stylesheet" href="css/animate.css" />
+                        <!-- themify icon CSS -->
+                        <link rel="stylesheet" href="vendors/themify_icons/themify-icons.css" />
+                        <!-- owl carousel CSS -->
+                        <link rel="stylesheet" href="vendors/owl_carousel/css/owl.carousel.css" />
+                        <!-- flaticon CSS -->
+                        <link rel="stylesheet" href="vendors/flatIcon/flaticon.css" />
+                        <!-- style CSS -->
+                        <link rel="stylesheet" href="css/style.css" />
+		            </pre>
+
+                <h2 class="title">Google Web Fonts</h2>
+
+                <p>By default, the template loads this font from Google Web Font Services, you can change the font with the one that suits you best.</p>
+
+                <pre class="brush:html">
+						<!--
+						Google Font
+						=========================== -->
+		                @import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,500,600,700,700i|Spectral:300,400,500,600,700&display=swap');
+		            </pre>
+
+                <p class="twenty">Remember to change the font into <strong>main.css</strong></p>
+            </section>
+
+            <section id="gallery">
+                <h2 class="title">Portfolio Gallery</h2>
+
+                <pre class="brush:html">
+						<!--
+						Portfolio Gallery
+						=========================== -->
+		                <div class="row grid grid_portfolio_style">
+                            <div class="grid-sizer col-lg-4 col-sm-6"></div>
+                            <div class="col-lg-4 col-sm-6 grid-item Branding wow fadeInUp" data-wow-delay=".3s">
+                                <div class="single_portfolio_part overlay_effect">
+                                    <a href="single_project_1.html" class=" single_portfolio_img">
+                                        <div class="overlay_effect_in">
+                                            <img src="img/portfolio/portfolio_1.png" alt="#" class="matrix3d_1 img-fluid">
+                                        </div>
+                                    </a>
+                                    <h4>
+                                        <span class="overlay_effect_in horizontal_effect">
+                                            <a class="tittle_animation" href="single_project_1.html"
+                                                data-hover="Social Profile Banner"> Social Profile Banner</a>
+                                        </span>
+                                    </h4>
+                                    <p> <span class="overlay_effect_in"> UI/UX Design</span></p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-6 grid-item Design wow fadeInUp" data-wow-delay=".5s">
+                                <div class="single_portfolio_part overlay_effect">
+                                    <a href="single_project_1.html" class=" single_portfolio_img">
+                                        <div class="overlay_effect_in">
+                                            <img src="img/portfolio/portfolio_2.png" alt="#" class="matrix3d_1 img-fluid">
+                                        </div>
+                                    </a>
+                                    <h4>
+                                        <span class="overlay_effect_in horizontal_effect">
+                                            <a class="tittle_animation" href="single_project_1.html"
+                                                data-hover="Social Profile Banner"> Social Profile Banner</a>
+                                        </span>
+                                    </h4>
+                                    <p> <span class="overlay_effect_in"> UI/UX Design</span></p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-6 grid-item web wow fadeInUp" data-wow-delay=".7s">
+                                <div class="single_portfolio_part overlay_effect">
+                                    <a href="single_project_1.html" class=" single_portfolio_img">
+                                        <div class="overlay_effect_in">
+                                            <img src="img/portfolio/portfolio_3.png" alt="#" class="matrix3d_1 img-fluid">
+                                        </div>
+                                    </a>
+                                    <h4>
+                                        <span class="overlay_effect_in horizontal_effect">
+                                            <a class="tittle_animation" href="single_project_1.html"
+                                                data-hover="Social Profile Banner"> Social Profile Banner</a>
+                                        </span>
+                                    </h4>
+                                    <p> <span class="overlay_effect_in"> UI/UX Design</span></p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-6 grid-item photo  wow fadeInUp" data-wow-delay=".3s">
+                                <div class="single_portfolio_part overlay_effect">
+                                    <a href="single_project_1.html" class=" single_portfolio_img">
+                                        <div class="overlay_effect_in">
+                                            <img src="img/portfolio/portfolio_5.png" alt="#" class="matrix3d_1 img-fluid">
+                                        </div>
+                                    </a>
+                                    <h4>
+                                        <span class="overlay_effect_in horizontal_effect">
+                                            <a class="tittle_animation" href="single_project_1.html"
+                                                data-hover="Social Profile Banner"> Social Profile Banner</a>
+                                        </span>
+                                    </h4>
+                                    <p> <span class="overlay_effect_in"> UI/UX Design</span></p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-6 grid-item Branding wow fadeInUp" data-wow-delay=".5s">
+                                <div class="single_portfolio_part overlay_effect">
+                                    <a href="single_project_1.html" class=" single_portfolio_img">
+                                        <div class="overlay_effect_in">
+                                            <img src="img/portfolio/portfolio_6.png" alt="#" class="matrix3d_1 img-fluid">
+                                        </div>
+                                    </a>
+                                    <h4>
+                                        <span class="overlay_effect_in horizontal_effect">
+                                            <a class="tittle_animation" href="single_project_1.html"
+                                                data-hover="Social Profile Banner"> Social Profile Banner</a>
+                                        </span>
+                                    </h4>
+                                    <p> <span class="overlay_effect_in"> UI/UX Design</span></p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-6 grid-item Design wow fadeInUp" data-wow-delay=".7s">
+                                <div class="single_portfolio_part overlay_effect">
+                                    <a href="single_project_1.html" class=" single_portfolio_img">
+                                        <div class="overlay_effect_in">
+                                            <img src="img/portfolio/portfolio_4.png" alt="#" class="matrix3d_1 img-fluid">
+                                        </div>
+                                    </a>
+                                    <h4>
+                                        <span class="overlay_effect_in horizontal_effect">
+                                            <a class="tittle_animation" href="single_project_1.html"
+                                                data-hover="Social Profile Banner"> Social Profile Banner</a>
+                                        </span>
+                                    </h4>
+                                    <p> <span class="overlay_effect_in"> UI/UX Design</span></p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-6 grid-item web wow fadeInUp" data-wow-delay=".3s">
+                                <div class="single_portfolio_part overlay_effect">
+                                    <a href="single_project_1.html" class=" single_portfolio_img">
+                                        <div class="overlay_effect_in">
+                                            <img src="img/portfolio/portfolio_7.png" alt="#" class="matrix3d_1 img-fluid">
+                                        </div>
+                                    </a>
+                                    <h4>
+                                        <span class="overlay_effect_in horizontal_effect">
+                                            <a class="tittle_animation" href="single_project_1.html"
+                                                data-hover="Social Profile Banner"> Social Profile Banner</a>
+                                        </span>
+                                    </h4>
+                                    <p> <span class="overlay_effect_in"> UI/UX Design</span></p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-6 grid-item photo wow fadeInUp" data-wow-delay=".5s">
+                                <div class="single_portfolio_part overlay_effect">
+                                    <a href="single_project_1.html" class=" single_portfolio_img">
+                                        <div class="overlay_effect_in">
+                                            <img src="img/portfolio/portfolio_8.png" alt="#" class="matrix3d_1 img-fluid">
+                                        </div>
+                                    </a>
+                                    <h4>
+                                        <span class="overlay_effect_in horizontal_effect">
+                                            <a class="tittle_animation" href="single_project_1.html"
+                                                data-hover="Social Profile Banner"> Social Profile Banner</a>
+                                        </span>
+                                    </h4>
+                                    <p> <span class="overlay_effect_in"> UI/UX Design</span></p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-6 grid-item web wow fadeInUp" data-wow-delay=".7s">
+                                <div class="single_portfolio_part overlay_effect">
+                                    <a href="single_project_1.html" class=" single_portfolio_img">
+                                        <div class="overlay_effect_in">
+                                            <img src="img/portfolio/portfolio_9.png" alt="#" class="matrix3d_1 img-fluid">
+                                        </div>
+                                    </a>
+                                    <h4>
+                                        <span class="overlay_effect_in horizontal_effect">
+                                            <a class="tittle_animation" href="single_project_1.html"
+                                                data-hover="Social Profile Banner"> Social Profile Banner</a>
+                                        </span>
+                                    </h4>
+                                    <p> <span class="overlay_effect_in"> UI/UX Design</span></p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-6 grid-item photo wow fadeInUp" data-wow-delay=".3s">
+                                <div class="single_portfolio_part overlay_effect">
+                                    <a href="single_project_1.html" class=" single_portfolio_img">
+                                        <div class="overlay_effect_in">
+                                            <img src="img/portfolio/portfolio_10.png" alt="#" class="matrix3d_1 img-fluid">
+                                        </div>
+                                    </a>
+                                    <h4>
+                                        <span class="overlay_effect_in horizontal_effect">
+                                            <a class="tittle_animation" href="single_project_1.html"
+                                                data-hover="Social Profile Banner"> Social Profile Banner</a>
+                                        </span>
+                                    </h4>
+                                    <p> <span class="overlay_effect_in"> UI/UX Design</span></p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-6 grid-item Design wow fadeInUp" data-wow-delay=".5s">
+                                <div class="single_portfolio_part overlay_effect">
+                                    <a href="single_project_1.html" class=" single_portfolio_img">
+                                        <div class="overlay_effect_in">
+                                            <img src="img/portfolio/portfolio_11.png" alt="#" class="matrix3d_1 img-fluid">
+                                        </div>
+                                    </a>
+                                    <h4>
+                                        <span class="overlay_effect_in horizontal_effect">
+                                            <a class="tittle_animation" href="single_project_1.html"
+                                                data-hover="Social Profile Banner"> Social Profile Banner</a>
+                                        </span>
+                                    </h4>
+                                    <p> <span class="overlay_effect_in"> UI/UX Design</span></p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-6 grid-item Branding wow fadeInUp" data-wow-delay=".7s">
+                                <div class="single_portfolio_part overlay_effect">
+                                    <a href="single_project_1.html" class=" single_portfolio_img">
+                                        <div class="overlay_effect_in">
+                                            <img src="img/portfolio/portfolio_12.png" alt="#" class="matrix3d_1 img-fluid">
+                                        </div>
+                                    </a>
+                                    <h4>
+                                        <span class="overlay_effect_in horizontal_effect">
+                                            <a class="tittle_animation" href="single_project_1.html"
+                                                data-hover="Social Profile Banner"> Social Profile Banner</a>
+                                        </span>
+                                    </h4>
+                                    <p> <span class="overlay_effect_in"> UI/UX Design</span></p>
+                                </div>
+                            </div>
+                        </div>
+		            </pre>
+            </section>
+
+            <section id="javascript">
+                <h2 class="title">Javascript Files and Structure</h2>
+
+                <p class="fifteen">These are the list of Javascript files that are loaded into templates in end of the <strong>Body Section</strong>.
+
+                    <pre class="brush: html">
+				        <!--
+						JavaScripts
+						========================== -->        
+                        <!-- jquery slim -->
+                        <script src="js/jquery-3.5.1.min.js"></script>
+                        <!-- popper js -->
+                        <script src="js/popper.min.js"></script>
+                        <!-- bootstarp js -->
+                        <script src="js/bootstrap.min.js"></script>
+                        <!-- easing js -->
+                        <script src="js/jquery.easing.min.js"></script>
+                        <!-- owl carousel js -->
+                        <script src="vendors/owl_carousel/js/owl.carousel.min.js"></script>
+                        <!-- wow js -->
+                        <script src="vendors/wow/wow.min.js"></script>
+                        <!-- powertip js -->
+                        <script src="vendors/powertip/jquery.powertip.js"></script>
+                        <!-- imagesloaded js -->
+                        <script src="vendors/imagesloaded/imagesloaded.pkgd.min.js"></script>
+                        <!-- custom js -->
+                        <script src="js/custom.js"></script>
+		            </pre>
+            </section>
+
+            <section id="contact-form">
+                <h2 class="title"> Contact Form </h2>
+                <p>This is a PHP Script for sending messages to your email, you should replace <strong>info@gmail.com</strong> to your email to start receive messages.</p>
+                <pre class="brush:php">
+                    <?php
+                        $to = "palashchandra.me@gmail.com";
+                        $from = $_REQUEST['email'];
+                        $name = $_REQUEST['name'];
+                        $subject = $_REQUEST['subject'];
+                        $number = $_REQUEST['number'];
+                        $cmessage = $_REQUEST['message'];
+
+                        $headers = "From: $from";
+                        $headers = "From: " . $from . "\r\n";
+                        $headers .= "Reply-To: ". $from . "\r\n";
+                        $headers .= "MIME-Version: 1.0\r\n";
+                        $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
+
+                        $subject = "You have a message from your droitlab.";
+
+                        $logo = 'img/logo.png';
+                        $link = '#';
+
+                        $body = "<!DOCTYPE html><html lang='en'><head><meta charset='UTF-8'><title>Express Mail</title></head><body>";
+                        $body .= "<table style='width: 100%;'>";
+                        $body .= "<thead style='text-align: center;'><tr><td style='border:none;' colspan='2'>";
+                        $body .= "<a href='{$link}'><img src='{$logo}' alt=''></a><br><br>";
+                        $body .= "</td></tr></thead><tbody><tr>";
+                        $body .= "<td style='border:none;'><strong>Name:</strong> {$name}</td>";
+                        $body .= "<td style='border:none;'><strong>Email:</strong> {$from}</td>";
+                        $body .= "</tr>";
+                        $body .= "<tr><td style='border:none;'><strong>Subject:</strong> {$csubject}</td></tr>";
+                        $body .= "<tr><td></td></tr>";
+                        $body .= "<tr><td colspan='2' style='border:none;'>{$cmessage}</td></tr>";
+                        $body .= "</tbody></table>";
+                        $body .= "</body></html>";
+                        $send = mail($to, $subject, $body, $headers);
+                    ?>
+                </pre>		            
+            </section>
+
+            <section id="credit">
+                <h2 class="title">Source and Credit</h2>
+                <div class="script-source">
+                    <ul>
+                        <li><a target="_blank" href="http://jquery.com/">jQuery</a></li>
+                        <li><a target="_blank" href="http://getbootstrap.com">Bootstrap4 Framework</a></li>
+                        <li><a target="_blank" href="http://www.owlgraphic.com/owlcarousel">Owl Carousel</a></li>
+                        <li><a target="_blank" href="http://isotope.metafizzy.co/">Isotope</a></li>
+                        <li><a target="_blank" href="http://dimsemenov.com/plugins/magnific-popup/">Magnefic Pop Up</a></li>
+                        <li><a target="_blank" href="http://fontawesome.io/">FontAwesome</a></li>
+                        <li><a target="_blank" href="https://daneden.github.io/animate.css/">Animate Css</a></li>
+                    </ul>
+
+                </div>
+
+            </section>
+        </div>
+    </div>
+
+
+    <!-- Essential JavaScript Libraries
+		==============================================-->
+    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery.nav.js"></script>
+    <script type="text/javascript" src="syntax-highlighter/scripts/shCore.js"></script>
+    <script type="text/javascript" src="syntax-highlighter/scripts/shBrushXml.js"></script>
+    <script type="text/javascript" src="syntax-highlighter/scripts/shBrushCss.js"></script>
+    <script type="text/javascript" src="syntax-highlighter/scripts/shBrushJScript.js"></script>
+    <script type="text/javascript" src="syntax-highlighter/scripts/shBrushPhp.js"></script>
+    <script type="text/javascript">
+        SyntaxHighlighter.all()
+
+    </script>
+    <script type="text/javascript" src="js/custom.js"></script>
+
+</body>
+
+</html>

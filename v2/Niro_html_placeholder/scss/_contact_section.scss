@@ -1,0 +1,167 @@
+.contact_section_content{
+    &.pr_60{
+        padding-right: 60px;
+        @media #{$mobile}{
+            padding-right: 0;
+        }
+    }
+    h2{
+        font-size: 48px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+    .contact_form{
+        margin-top: 50px;
+    }
+    .single_contact_form{
+        .cu_input{
+            border-style: solid;
+            border-width: 1px;
+            border-color: rgb(229, 229, 229);
+        }
+    }
+    ul{
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        margin-top: 35px;
+        li{
+            color: #7d7d7d;
+            display: inline-flex;
+            align-items: center;
+            align-items: center;
+            font-size: 18px;
+            margin-bottom: 32px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+            img{
+                margin-right: 15px;
+            }
+        }
+    }
+}
+.contact_section{
+    position: relative;
+    z-index: 1;
+    .contactMap {
+        width: 50%;
+        height: 100%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        @media #{$mobile}{
+            position: relative;
+            width: 100%;
+            height: 400px;
+            margin-bottom: 70px;
+        }
+    }
+    .contact_shape_1{
+        position: absolute;
+        left: 0;
+        top: 40%;
+        z-index: -1;
+        @media #{$tab}{
+            display: none;
+        }
+        @media #{$medium_device}{
+            display: none;
+        }
+    }
+    .contact_shape_2{
+        position: absolute;
+        right: 0;
+        top: 40%;
+        @media #{$tab}{
+            display: none;
+        }
+        @media #{$medium_device}{
+            display: none;
+        }
+    }
+}
+#contactMap {
+    height: 100% !important;
+}
+
+//contact info section css here
+.contact_info_section{
+    .single_contact_info{
+        text-align: center;
+        @media #{$tab}{
+            margin: 30px 0;
+        }
+        img{
+            margin-bottom: 33px;
+        }
+        h4{
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #34373b;
+        }
+        p{
+            a{
+                color: $text_color;
+                &:hover{
+                    color: $base_color;
+                }
+            }
+        }
+    }
+}
+
+//contact form map section
+.contact_map_section{
+    .contactMap{
+        height: 600px;
+        width: 100%;
+        @media #{$mobile}{
+            height: 400px;
+        }
+        @media #{$tab_device}{
+            height: 450px;
+        }
+    }
+}
+.contact_form_sec_tittle{
+    h2{
+        font-size: 48px;
+        line-height: 56px;
+        @media #{$mobile}{
+            font-size: 30px;
+            line-height: 35px;
+        }
+        @media #{$tab_device}{
+            font-size: 30px;
+            line-height: 35px;
+        }
+    }
+}
+#contactForm{
+    .single_contact_form{
+        margin-bottom: 30px;
+        .cu_input{
+            margin-bottom: 0;
+        }
+    }
+}
+
+#success, #error {
+    position: relative;
+    top: 10px;
+    display: block;
+    right: 0;
+    left: 0;
+    bottom: -15px;
+    display: none;
+    font-weight: 600;
+}
+
+#success {
+  color: #b40005;
+}
+#error {
+  color: $base_color;
+}

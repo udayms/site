@@ -1,0 +1,102 @@
+.single_services_part {
+    position: relative;
+    padding-left: 100px;
+    margin-bottom: 90px;
+    @media #{$tab}{
+        padding-left: 70px;
+        margin-bottom: 40px;
+    }
+    img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        max-width: 75px;
+        @media #{$tab}{
+            max-width: 50px;
+        }
+    }
+
+    h4 {
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 20px;
+        a{
+            color: $heading_color;
+            &:hover{
+                color: $base_color;
+            }
+        }
+        @media #{$tab}{
+            margin-bottom: 10px;
+        }
+    }
+    
+    &.style_2{
+        padding: 0;
+        margin-bottom: 76px;
+        text-align: center;
+        @media #{$tab}{
+            margin-bottom: 30px;
+        }
+        @media #{$medium_device}{
+            margin-bottom: 30px;
+        }
+        img{
+            position: relative;
+            max-width: 100%;
+        }
+        
+        h4{
+            margin-top: 30px;
+            margin-bottom: 16px;
+            @media #{$tab}{
+                margin-top: 15px;
+            }
+            @media #{$medium_device}{
+                margin-top: 15px;
+            }
+        }
+    }
+}
+.single_service_section{
+    .service_icon{
+        max-width: 95px;
+        min-height: 95px;
+    }
+}
+.single_page_service {
+    position: relative;
+    z-index: 1;
+    &.sec_padding {
+        padding: 120px 0 30px;
+        @media #{$mobile}{
+            padding: 70px 0 30px;
+        }
+        @media #{$tab_device}{
+            padding: 70px 0 30px;
+        }
+    }
+    &.single_service_padding{
+        padding: 120px 0 35px;
+        @media #{$mobile}{
+            padding: 70px 0 30px;
+        }
+        @media #{$tab_device}{
+            padding: 70px 0 30px;
+        }
+    }
+    .icon_1{
+        position: absolute;
+        left: 0;
+        top: 45%;
+        z-index: 1;
+        @media #{$mobile}{
+            display: none;
+        }
+        @media #{$tab_device}{
+            img{
+                max-width: 150px;
+            }
+        }
+    }
+}

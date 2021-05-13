@@ -1,0 +1,528 @@
+.single_portfolio_part {
+    text-align: center;
+    display: block;
+    position: relative;
+    z-index: 1;
+    h4 {
+        font-size: 24px;
+        font-weight: 600;
+        margin-top: 28px;
+        margin-bottom: 0;
+        @media #{$tab}{
+            margin-top: 20px;
+            font-size: 18px;
+        }
+        a {
+            color: $heading_color;
+
+            &:hover {
+                color: $base_color;
+            }
+        }
+        .tittle_animation{
+            &:hover {
+                color: $heading_color;
+            }
+        }
+    }
+    h3 {
+        font-size: 24px;
+        font-weight: 600;
+        margin-top: 28px;
+        margin-bottom: 0;
+        a{
+            color: $heading_color;
+        }
+        @media #{$tab}{
+            margin-top: 20px;
+            font-size: 18px;
+        }
+    }
+    .single_portfolio_img{
+        position: relative;
+        z-index: 1;
+        display: inline-block;
+        overflow: hidden;
+        img{
+            @include transform_time(.3s);
+        }
+        &:hover{
+            img{
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+.portfolio_grid_style {
+    .container {
+        @media (min-width: 1680px){
+            max-width: 1450px;
+        }
+        @media #{$big_device}{
+            padding-right: 30px;
+            padding-left: 30px;
+        }
+        .row {
+            @media #{$big_device}{
+                margin-right: -30px;
+                margin-left: -30px;
+            }
+            .col-lg-4, .col-lg-6 {
+                @media #{$big_device}{
+                    padding-right: 30px;
+                    padding-left: 30px;
+                }
+            }
+        }
+    }
+    .portfolio_filter_menu {
+        text-align: center;
+        margin-bottom: 65px;
+        @media #{$tab}{
+            margin-bottom: 30px;
+        }
+        button {
+            font-size: 14px;
+            text-transform: uppercase;
+            color: #b0b0b0;
+            padding: 0 35px;
+            letter-spacing: 2px;
+            background-color: transparent;
+            border: 0px solid transparent;
+            @include transform_time(.3s);
+            @media #{$tab}{
+                padding: 15px;
+                display: inline-block;
+            }
+            &.active{
+                color: #051441;
+            }
+            &:hover{
+                color: #051441;
+            }
+        }
+    }
+    
+    .grid-item{
+        margin-bottom: 75px;
+        overflow: hidden;
+        @media #{$tab}{
+            margin-bottom: 35px;
+        }
+    }
+    
+    .cu_btn{
+        margin-top: 10px;
+    }
+    .mt_btn{
+        
+        @media #{$big_device}{
+            margin-top: 153px;
+        }
+        @media #{$tab}{
+            margin-top: 20px;
+        }
+        &.animate_btn{
+            border: 1px solid rgba($color: #fff, $alpha: .3);
+            color: $white;
+        }
+    }
+    &.grid_style_1{
+        .row {
+            margin-right: -10px;
+            margin-left: -10px;
+        }
+        .col-lg-3{
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+        .single_portfolio_part{
+            margin-bottom: 13px;
+            position: relative;
+            z-index: 1;
+            text-align: left;
+            overflow: hidden;
+            &:after{
+                position: absolute;
+                content: "";
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 2;
+                @include transform_time(.5s);
+                background-color: rgba($color: $base_color, $alpha: 0);
+                @media #{$tab}{
+                    background-color: rgba($color: $base_color, $alpha: .7);
+                }
+            }
+            img{
+                transform: scale(1);
+                @include transform_time(.5s);
+                width: 100%;
+            }
+            .hover_content{
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                padding: 40px 40px 30px;
+                opacity: 0;
+                visibility: hidden;
+                z-index: 3;
+                @media #{$tab}{
+                    opacity: 1;
+                    visibility: visible;
+                }
+                h4{
+                    color: $white;
+                    font-size: 28px;
+                    font-weight: 600;
+                    overflow: hidden;
+                    display: block;
+                    @media #{$tab}{
+                        font-size: 22px;
+                    }
+                    span{
+                        color: $white;
+                        overflow: hidden;
+                        display: block;
+                    }
+                }
+                p{
+                    color: $white;
+                    overflow: hidden;
+                    display: block;
+                    span{
+                        overflow: hidden;
+                        display: block;
+                    }
+                }
+            }
+            &:hover{
+                &:after{
+                    background-color: rgba($color: $base_color, $alpha: .9);
+                }
+                img{
+                    transform: scale(1.1);
+                }
+                .hover_content{
+                    opacity: 1;
+                    visibility: visible;
+
+                    h4{
+                        span{
+                            animation: fadeInUp2 .5s both .1s; 
+                        }
+                    }
+                    p{
+                        span{
+                            animation: fadeInUp2 .5s both .1s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.portfolio_normal_style{
+        .single_portfolio_part{
+            margin-bottom: 60px;
+            @media #{$tab}{
+                margin-bottom: 30px;
+            }
+            @media #{$medium_device}{
+                margin-bottom: 40px;
+            }
+        }
+        .cu_btn{
+            margin-top: 40px;
+            @media #{$tab}{
+                margin-top: 20px;
+            }
+            @media #{$medium_device}{
+                margin-top: 30px;
+            }
+        }
+    }
+    
+}
+
+//contact section css
+.hire_section{
+    position: relative;
+    @media #{$big_device}{
+        padding: 65px 0 160px;
+    }
+    @media #{$tab}{
+        padding: 0 0 70px;
+    }
+    .hire_shape_1{
+        position: absolute;
+        left: 0;
+        bottom: 10%;
+        @media #{$tab}{
+            display: none;
+        }
+    }
+    .hire_shape_2{
+        position: absolute;
+        right: 0;
+        bottom: 12%;
+        @media #{$tab}{
+            display: none;
+        }
+    }
+    .hire_section_content{
+        text-align: center;
+    }
+    .btn_1{
+        margin-top: 41px;
+        font-family: $font_2;
+        text-transform: capitalize;
+        letter-spacing: 1pt;
+        border: 1px solid rgba($color: #fff, $alpha: .3);
+        @media #{$tab}{
+            margin-top: 20px;
+        }
+    }
+    &.bark_bg{
+        background-color: #051441;
+        padding: 120px 0;
+        .overlay_effect {
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: .5s;
+            &.is_show{
+                transform: scaleX(1);
+            }
+        }
+        h2{
+            margin-bottom: 41px;
+        }
+        .cu_btn{
+            background-color: $white;
+            border: 1px solid $white;
+            color: #051441;
+            &:hover{
+                background-color: $base_color;
+                border: 1px solid $base_color;
+                color: $white;
+            }
+        }
+    }
+    &.red_bg{
+        background-color: #b60000;
+        padding: 120px 0;
+        @media #{$mobile}{
+            padding: 70px 0;
+        }
+        @media #{$tab_device}{
+            padding: 80px 0;
+        }
+        .cu_btn{
+            background-color: $white;
+            border: 1px solid $white;
+            color: #051441;
+            margin-top: 41px;
+            &:hover{
+                background-color: $heading_color;
+                color: #fff;
+                border: 1px solid $heading_color;
+            }
+            @media #{$mobile}{
+                margin-top: 20px;
+            }
+            @media #{$tab_device}{
+                margin-top: 20px;
+            }
+            @media #{$medium_device}{
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+.portfolio_card_style{
+    .card-columns {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+        -webkit-column-gap: 180px;
+        -moz-column-gap: 180px;
+        column-gap: 180px;
+        orphans: 1;
+        widows: 1;
+        @media #{$xs_mobile}{
+            -webkit-column-count: 1;
+            -moz-column-count: 1;
+            column-count: 1;
+        }
+        @media #{$mobile}{
+            -webkit-column-gap: 40px;
+            -moz-column-gap: 40px;
+            column-gap: 40px;
+        }
+        @media #{$tab_device}{
+            -webkit-column-gap: 80px;
+            -moz-column-gap: 80px;
+            column-gap: 80px;
+        }
+        @media #{$medium_device}{
+            -webkit-column-gap: 80px;
+            -moz-column-gap: 80px;
+            column-gap: 80px;
+        }
+        .card{
+            max-width: 465px;
+            border: 0px solid transparent;
+            border-radius: 0;
+            padding: 0;
+            margin: 0;
+            margin-bottom: 90px;
+            @media #{$mobile}{
+                margin-bottom: 40px;
+            }
+            @media #{$tab_device}{
+                margin-bottom: 40px;
+            }
+        }
+        h4{
+            font-size: 36px;
+            @media #{$mobile}{
+                font-size: 24px;
+            }
+            @media #{$tab_device}{
+                font-size: 30px;
+            }
+        }
+    }
+    .cu_btn{
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+
+//portfolio card style 2
+.portfolio_card_padding{
+    padding-left: 350px;
+    position: relative;
+    @media #{$tab}{
+        padding-left: 90px;
+    }
+    @media #{$medium_device}{
+        padding-left: 250px;
+    }
+    .portfolio_card_style_2{
+        padding-top: 80px;
+        padding-left: 80px;
+        padding-right: 80px;
+        background-color: $white;
+        position: relative;
+        z-index: 2;
+        @media #{$medium_device}{
+            padding-top: 40px;
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+        @media #{$tab_device}{
+            padding-top: 40px;
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+        @media #{$mobile}{
+            padding-top: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+}
+.portfolio_card_style_2 {
+    .grid-item{
+        margin-bottom: 75px;
+        overflow: hidden;
+        @media #{$medium_device}{
+            margin-bottom: 40px;
+        }
+        @media #{$tab_device}{
+            margin-bottom: 35px;
+        }
+        @media #{$mobile}{
+            margin-bottom: 20px;
+        }
+    }
+    .cu_btn{
+        margin-top: 10px;
+    }
+    .card-columns {
+        -webkit-column-gap: 60px;
+        -moz-column-gap: 60px;
+        column-gap: 60px;
+        @media #{$medium_device}{
+            -webkit-column-gap: 30px;
+            -moz-column-gap: 30px;
+            column-gap: 30px;
+        }
+        @media #{$tab_device}{
+            -webkit-column-gap: 30px;
+            -moz-column-gap: 30px;
+            column-gap: 30px;
+            -webkit-column-count: 2;
+            -moz-column-count: 2;
+            column-count: 2;
+        }
+        @media #{$mobile}{
+            -webkit-column-gap: 30px;
+            -moz-column-gap: 30px;
+            column-gap: 30px;
+            -webkit-column-count: 1;
+            -moz-column-count: 1;
+            column-count: 1;
+        }
+    }
+    .card{
+        border: 0px solid transparent;
+        margin-bottom: 70px;
+        @media #{$tab}{
+            margin-bottom: 35px;
+        }
+        p{
+            font-size: 16px;
+        }
+    }
+}
+
+.single_section_zoom{
+    .addclass_section{
+        opacity: 0;
+        transform: scale(.8);
+        @include transform_time(1s);
+        transform-origin: top center;
+        &.in_active{
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+}
+.single_section_animation{
+    .addclass_section{
+        position: relative;
+        z-index: 1;
+        display: inline-block;
+        &:after{
+            position: absolute;
+            content: "";
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: $heading_color;
+            @include transform_time(1s);
+            transform: scale(1, 1);
+            transform-origin: right;
+        }
+        &.in_active{
+            &:after{
+                transform: scale(0, 1);
+            }
+        }
+    }
+}

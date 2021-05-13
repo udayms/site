@@ -1,0 +1,250 @@
+.single_service_section {
+    text-align: center;
+
+    @media #{$mobile} {
+        margin-top: 40px;
+    }
+
+    img {
+        margin-bottom: 46px;
+
+        @media #{$mobile} {
+            margin-bottom: 20px;
+        }
+    }
+
+    h4 {
+        font-size: 24px;
+        font-weight: 500;
+        margin-bottom: 13px;
+        a{
+            color: $heading_color;
+            &:hover{
+                color: $base_color;
+            }
+        }
+        @media #{$mobile} {
+            margin-bottom: 15px;
+        }
+    }
+}
+
+.services_section {
+    .section_tittle {
+        margin-bottom: 84px;
+
+        @media #{$mobile} {
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            letter-spacing: -2px;
+        }
+    }
+
+    &.ft_font {
+        h4 {
+            font-weight: 600;
+        }
+    }
+
+    &.corporate_services_section {
+        .section_tittle {
+            margin-bottom: 24px;
+        }
+
+        .single_service_section {
+            margin-top: 60px;
+        }
+    }
+   
+    &.dark_version {
+        .section_tittle_content {
+            p {
+                color: rgba($color: white, $alpha: .5);
+            }
+        }
+
+        .single_service_section {
+            h4 a {
+                color: $white;
+                @include transform_time(.5s);
+                &:hover{
+                    color: $base_color;
+                }
+            }
+
+            p {
+                color: rgba($color: white, $alpha: .5);
+            }
+        }
+    }
+}
+.dark_version {
+    .section_tittle_content {
+        p {
+            color: rgba($color: white, $alpha: .5);
+            @media #{$tab} {
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+//our services section
+.our_services {
+    margin-top: -130px;
+
+    @media #{$mobile} {
+        margin-top: -30px;
+    }
+}
+
+.services_content_iner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .single_services_section {
+        flex: 33.3% 0 0;
+
+        @media #{$mobile} {
+            flex: 100% 0 0;
+        }
+    }
+}
+
+.single_services_section {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    .services_section_bg {
+        height: 435px;
+        @include transform_time(.3s);
+        display: block;
+        @media #{$mobile} {
+            height: 400px;
+        }
+        @media #{$tab_device} {
+            height: 350px;
+        }
+        &.bg_1 {
+            @include background ('../img/services_bg_1.png');
+        }
+        &.bg_2 {
+            @include background ('../img/services_bg_2.png');
+        }
+        &.bg_3 {
+            @include background ('../img/services_bg_3.png');
+        }
+
+        &.bg_4 {
+            @include background ('../img/services_bg_4.png');
+        }
+        &.bg_5 {
+            @include background ('../img/services_bg_5.png');
+        }
+        &.bg_6 {
+            @include background ('../img/services_bg_6.png');
+        }
+    }
+    .single_section_content {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 40px 40px 24px;
+        @media #{$tab_device} {
+            padding: 20px 20px 15px;
+        }
+        h5 {
+            font-size: 14px;
+            text-transform: uppercase;
+            color: $white;
+            @include transform_time(.3s);
+        }
+        h3 {
+            font-size: 30px;
+            color: $white;
+            @include transform_time(.3s);
+            a{
+                color: $white;
+                &:hover{
+                    color: $base_color;
+                }
+            }
+        }
+    }
+}
+
+//service details css
+
+.service_details_content {
+    h2 {
+        margin-bottom: 15px;
+        font-weight: 600;
+        margin-bottom: 15px;
+        margin-top: 50px;
+    }
+
+    p {
+        margin-bottom: 25px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.service_details {
+    &.mt_150 {
+        margin-top: -150px;
+
+        @media #{$tab} {
+            margin-top: -50px;
+        }
+    }
+
+    &.style_2 {
+        h2 {
+            margin-top: 0;
+        }
+
+        .service_details_content {
+            img {
+                margin-bottom: 20px;
+            }
+
+            border-bottom: 1px solid #f2f2f2;
+            padding-bottom: 73px;
+        }
+
+        .service_nmber {
+            margin-bottom: 33px;
+        }
+    }
+}
+
+.single_service {
+    margin-top: 80px;
+
+    @media #{$mobile} {
+        margin-top: 50px;
+    }
+
+    h3 {
+        font-size: 36px;
+        font-weight: 600;
+        margin-bottom: 22px;
+
+        @media #{$mobile} {
+            font-size: 25px;
+            margin-bottom: 15px;
+        }
+    }
+
+    .single_service_section_img {
+        margin: 25px 0;
+    }
+}
+.service_icon{
+    max-width: 95px !important;
+}

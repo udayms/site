@@ -1,0 +1,237 @@
+.testimonial_section{
+    position: relative;
+    
+    .testimonial_icon_1{
+        position: absolute;
+        left: 85px;
+        top: 40%;
+        @media #{$mobile}{
+            display: none;
+        }
+        @media #{$tab_device}{
+            display: none;
+        }
+    }
+    .testimonial_icon_2{
+        position: absolute;
+        right: 40px;
+        top: 40%;
+        @media #{$mobile}{
+            display: none;
+        }
+        @media #{$tab_device}{
+            display: none;
+        }
+    }
+    .single_testimonial_slider{
+        text-align: center;
+        img{
+            max-width: 100px;
+            border-radius: 50%;
+            margin: 0 auto;
+            margin-bottom: 17px;
+        }
+        h4{
+            font-size: 24px;
+            font-weight: 500;
+            span{
+                display: block;
+                font-size: 16px;
+                color: #4b4b4b;
+                font-weight: 400;
+                margin-top: 6px;
+            }
+        }
+        p{
+            font-size: 30px;
+            font-style: italic;
+            line-height: 1.4;
+            margin-top: 25px;
+            color: #4b4b4b;
+            @media #{$mobile}{
+                font-size: 18px;
+            }
+            @media #{$tab_device}{
+                font-size: 24px;
+            }
+        }
+    }
+    .section_tittle{
+        margin-bottom: 66px;
+        @media #{$tab}{
+            font-size: 30px;
+        }
+        @media #{$medium_device}{
+            font-size: 30px;
+        }
+    }
+    &.testimonial_padding{
+        
+        .testimonial_section_content{
+            margin-bottom: -40px;
+        }
+        .single_testimonial_slider{
+            margin-bottom: 40px !important;
+        }
+    }
+    &.box_style{
+        .single_testimonial_slider{
+            background-color: $white;
+            box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.06);
+            position: relative;
+            margin: 57px 40px 0 40px;
+            padding: 58px 100px 50px;
+            @media #{$mobile}{
+                margin: 57px 15px 15px;
+                padding: 34px 15px 39px;
+            }
+            @media #{$tab_device}{
+                margin: 55px;
+                padding: 34px 15px 39px;
+            }
+            img{
+                position: absolute;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+                top: -57px;
+            }
+            h4{
+                margin-top: 38px;
+                @media #{$tab}{
+                    margin-top: 25px;
+                }
+            }
+        }
+        &.navText{
+             .owl-nav button.owl-next, .owl-nav button.owl-prev {
+                left: -60px;
+                top: 52%;
+                @media #{$tab}{
+                    left: -20px;
+                }
+            }
+            .owl-nav button.owl-next {
+                right: -60px;
+                left: auto;
+                @media #{$tab}{
+                    right: -20px;
+                }
+            }
+        }
+    }
+    &.style_2{
+        overflow: hidden;
+        .testimonial_slider_style_2{
+            margin: -50px 0;
+        }
+        .single_testimonial_slider{
+            padding: 40px;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04);
+            text-align: left;
+            margin: 50px 25px;
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
+            @media #{$tab}{
+                margin: 20px 15px;
+            }
+            @media #{$medium_device}{
+                margin: 20px 15px;
+            }
+            .testimonial_shape{
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                z-index: -1;
+                border-radius: 0;
+                max-width: auto !important;
+                margin-bottom: 0;
+            }
+            h4{
+                margin-bottom: 0;
+                padding-top: 8px;
+                span{
+                    color: #4b4b4b;
+                }
+            }
+            .testimonial_slider_tittle{
+                position: relative;
+                padding-left: 90px;
+                img{
+                    left: 0;
+                    margin: 0;
+                    max-width: 70px;
+                    position: absolute;
+                    top: 0;
+                }
+            }
+            p{
+                font-size: 20px;
+                line-height: 1.5;
+                font-style: normal;
+                margin-top: 30px;
+            }
+        }
+         .owl-nav button.owl-prev {
+            left: -80px;
+        }
+         .owl-nav button.owl-next {
+            right: -80px;
+            left: auto;
+        }
+        .testimonial_icon_2{
+            right: -100px;
+            top: 50%;
+        }
+    }
+    &.dark_version{
+        .single_testimonial_slider {
+            p{
+                color: $white;
+                font-weight: 400;
+            }
+            h4{
+                margin-top: 35px;
+                color: $white;
+                font-size: 30px;
+                font-weight: 500;
+                @media #{$tab}{
+                    font-size: 25px;
+                }
+                span{
+                    font-size: 16px;
+                    color: rgba($color: #fff, $alpha: .5);
+                }
+            }
+        }
+        .owl-prev, .owl-next{
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateX(-50%);
+            @include transform_time(.3s);
+            i{
+                font-size: 30px;
+                color: #828488;
+            }
+            &:hover{
+                i{
+                    color: $base_color;
+                }
+            }
+        }
+        .owl-prev{
+            left: 0;
+            right: auto;
+            &:hover{
+                left: -10px;
+            }
+        }
+        .owl-next{
+            &:hover{
+                right: -10px;
+            }
+        }
+    }
+}

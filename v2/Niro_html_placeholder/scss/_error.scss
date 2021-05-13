@@ -1,0 +1,151 @@
+.error_page{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    .error_page_iner{
+        text-align: center;
+        margin: 0 auto;
+        h3{
+            margin-top: 40px;
+            font-size: 36px;
+            font-weight: 600;
+
+        }
+    }
+    p{
+        margin-top: 41px;
+        font-weight: 500;
+        i{
+            margin-right: 10px;
+            font-weight: 500;
+        }
+    }
+    .error_icon_1{
+        position: absolute;
+    }
+    [class^="error_icon_"] {   
+       position: absolute;
+       @media #{$tab}{
+           display: none;
+       }
+       .layer{
+           position: relative !important;
+       }
+    }
+    .error_icon_1{
+        left: 10%;
+        top: 10%;
+    }
+    .error_icon_2{
+        left: 8%;
+        top: 49%;
+    }
+    .error_icon_3{
+        left: 11%;
+        bottom: 10%;
+    }
+    .error_icon_4{
+        left: 60%;
+        bottom: 10%;
+    }
+    .error_icon_5{
+        right: 10%;
+        top: 10%;
+    }
+    .error_icon_6{
+        right: 7%;
+        top: 50%;
+    }
+    .error_icon_7{
+        right: 0;
+        bottom: 8%;
+    }
+    .error_icon_8{
+        left: 32%;
+        top: 38%;
+    }
+    .error_icon_9{
+        right: 30%;
+        top: 50%;
+    }
+}
+.icon_animation{
+    overflow: hidden;
+}
+.subscribe_form{
+    display: flex;
+    align-items: center;
+    margin-top: 71px;
+    @media #{$xs_mobile}{
+        display: block;
+        margin-top: 30px;
+    }
+    input{
+        width: 100%;
+        border: 1px solid #cbe0fb;
+        border-radius: 50px;
+        font-size: 16px;
+        padding: 16px 30px;
+        color: #888f9b;
+        line-height: 26px;
+        
+    }
+    a{
+        padding: 7px 27px;
+        display: inline-block;
+        background-color: $base_color;
+        border: 1px solid $base_color;
+        position: absolute;
+        right: 21px;
+        line-height: 8px;
+        border-radius: 50px;
+        @media #{$xs_mobile}{
+            display: block;
+            width: 100%;
+            margin-top: 15px;
+            top: 3px;
+            right: 6px;
+            
+        }
+        i{
+            font-size: 34px;
+            color: $white;
+        }
+    }
+    
+}
+.go_back{
+    color: $heading_color;
+    &:hover{
+        color: $base_color;
+    }
+}
+.subscribe_form{
+    input{
+        padding: 16px 30px;
+        line-height: 26px;
+        @media #{$xs_mobile}{
+            padding: 16px 105px 16px 15px;
+            
+        }
+    }
+}
+.error_page{
+    @media (max-width: 576px){
+        .subscribe_form{
+            position: relative;
+        }
+        .subscribe_form a {
+            display: flex;
+            width: auto;
+            position: absolute;
+            top: -9px;
+            right: 6px;
+            i{
+                font-size: 33px;
+            }
+        }
+    }
+}

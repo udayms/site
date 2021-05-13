@@ -1,0 +1,76 @@
+.skil_list_section {
+    .skil_list_content {
+        @media #{$xs_mobile}{
+            margin-bottom: 50px;
+        }
+        h5 {
+            margin-bottom: 30px;
+            font-family: $font_2;
+        }
+
+        h2 {
+            color: $white;
+            margin-bottom: 30px;
+            font-family: $font_2;
+            @media #{$tab}{
+                margin-bottom: 15px;
+            }
+            @media #{$medium_device}{
+                margin-bottom: 15px;
+            }
+        }
+
+        p {
+            color: $white;
+        }
+    }
+    .skil_progressbar{
+        padding-left: 65px;
+        @media #{$xs_mobile}{
+            padding-left: 0;
+        }
+        @media #{$large_mobile}{
+            padding-left: 15px;
+        }
+    }
+
+    .single_progress_bar .line {
+        height: 4px;
+        background: $white;
+        border-radius: 0;
+        position: relative;
+        width: 100%;
+    }
+
+    .single_progress_bar .p {
+        font-size: 18px;
+        color: $white;
+    }
+
+    .single_progress_bar{
+        margin-bottom: 32px;
+        position: relative;
+        @media #{$xs_mobile}{
+            margin-bottom: 20px;
+        }
+        @media #{$large_mobile}{
+            margin-bottom: 20px;
+        }
+        &:last-child{
+            margin-bottom: 0;
+        }
+        p{
+            font-size: 18px;
+            color: $white;
+            margin-bottom: 10px;
+        }
+    }
+    @keyframes animationLoaded {
+        0% {
+            width: 0%;
+        }
+        100% {
+            width: 100%;
+        }
+    }
+}

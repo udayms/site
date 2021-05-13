@@ -1,0 +1,186 @@
+/*----------------------------------------------------
+@File: Default Styles
+@Author: Droitthemes
+@URL: http://droitthemes.com/
+Author E-mail: 
+
+This file contains the styling for the actual template, this
+is the file you need to edit to change the look of the
+template.
+---------------------------------------------------- */
+/*=====================================================================
+@Template Name: NIRO
+@Author:  Md. Shahadat Hussain
+@Developed By: Palash
+@Developer URL: palashchandra.xyz
+Author E-mail: 
+
+@Default Styles
+
+Table of Content:
+01/ Variables
+02/ mixins
+03/ reset
+04/ button
+05/ header
+06/ banner part
+07/ about
+08/ services section
+09/ gallery
+10/ portfolio section 
+11/ testimonial section 
+12/ cta part 
+13/ client list section 
+14/ subscribe_form section 
+15/ vartical slidebanner 
+16/ profile info 
+17/ portfolio grid style 
+18/ dark grid style 
+19/ skil list section 
+20/ breadcrumb part 
+21/ blog section 
+22/ team member part 
+23/ countdown section 
+24/ blog details 
+25/ blog Page 
+26/ sidebar 
+27/ contact section 
+28/ faq intro 
+29/ faq cta part 
+30/ pricing 
+31/ single page service 
+32/ shop list section 
+33/ multiScroll section 
+34/ coming soon 
+35/ error page content 
+36/ cart page content 
+37/ portfolio details 
+38/ product details 
+39/ center portfolio part 
+40/ fullpage 
+41/ footer
+=====================================================================*/ 
+
+//variables css
+@import "variables";
+
+//mixins css
+@import "mixins";
+
+//reset css
+@import "reset";
+
+//button css
+@import "button";
+
+//header part style css
+@import "header";
+
+//banner part style css
+@import "banner_part";
+
+//about part css
+@import "about";
+
+//services section css
+@import "services_section";
+
+//gallery section css
+@import "gallery";
+
+//portfolio section css
+@import "portfolio_section";
+
+//testimonial section css
+@import "testimonial_section";
+
+//cta part css
+@import "cta_part";
+
+//cta part css
+@import "client_list_section";
+
+//cta part css
+@import "subscribe_form_section";
+
+//vartical slider banner css
+@import "vartical_slider_banner";
+
+//profile info css
+@import "profile_info";
+
+//portfolio grid style css
+@import "portfolio_grid_style";
+
+//dark grid stylecss
+@import "dark_grid_style";
+
+//skil list section css
+@import "skil_list_section";
+
+//breadcrumb section css
+@import "breadcrumb_part";
+
+//blog part style css
+@import "blog_section";
+
+//blog part style css
+@import "team_member_part";
+
+//blog part style css
+@import "countdown_section";
+
+//blog part style css
+@import "blog_details";
+
+//blog Page style css
+@import "blog_Page";
+
+//sibebar style css
+@import "sidebar";
+
+//sibebar style css
+@import "contact_section";
+
+//faq intro style css
+@import "faq_intro";
+
+//faq cta part style css
+@import "faq_cta_part";
+
+//pricing part style css
+@import "pricing";
+
+//pricing part style css
+@import "single_page_service";
+
+//pricing part style css
+@import "shop_list_section";
+
+//pricing part style css
+@import "multiScroll_section";
+
+//coming soon style css
+@import "coming_soon";
+
+//coming soon style css
+@import "error_page_content";
+
+//cart page style css
+@import "cart_page_content";
+
+//portfolio details css
+@import "portfolio_details";
+
+//portfolio details css
+@import "product_details";
+
+//center portfolio part css
+@import "center_portfolio_part";
+
+//center portfolio part css
+@import "fullpage";
+
+//footer css
+@import "footer";
+

@@ -1,0 +1,27 @@
+.subscribe_form_section{
+    .section_tittle{
+        margin-bottom: 40px;
+        h2{
+            color: $white;
+        }
+    }
+    .cu_input{
+        background-color: $white;
+        border: 1px solid $white;
+        border-radius: 0;
+        padding: 17px 25px;
+        height: auto;
+        line-height: 19px;
+    }
+    .cu_btn {
+        padding: 19px 20px;
+        line-height: 16px;
+        width: 100%;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+}
+.newsletter_bg{
+    @include background ('../img/newsletter_bg.png');
+}

@@ -1,0 +1,150 @@
+.multiScroll_section{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    .social_icon{
+        position: absolute;
+        bottom: 40px;
+        right: 40px;
+        a{
+            color: $heading_color;
+        }
+    }
+    @media (max-width: 991px){
+         .ms-left, .ms-right {
+            width: 100% !important;
+            min-height: 0 !important;
+            height: auto !important;
+            position: relative !important;
+            top: auto !important;
+        }
+    }
+
+    .single_multiScroll_img_1{
+        @include background ('../img/multi_scorl_img_1.png');
+        height: 100%;
+        width: 100%;
+    }
+    .multiScroll_content{
+        padding: 50px;
+        text-align: center;
+        h5{
+            font-size: 24px;
+            color: $base_color;
+            margin-bottom: 18px;
+            text-transform: capitalize;
+            font-weight: 400;
+        }
+        h2{
+            font-size: 90px;
+            font-weight: 700;
+            margin-bottom: 4px;
+            line-height: 1;
+            display: inline-flex;
+            a{
+                color: $heading_color;
+            }
+        }
+        p{
+            font-size: 20px;
+        }
+        .cu_btn{
+            margin-top: 47px;
+        }
+    }
+    .tittle_slide_effect {
+        overflow: hidden;
+    }
+    .tittle_slide_effect_in {
+        overflow: hidden;
+        position: relative;
+        transform: scaleX(0);
+        -webkit-transform-origin: left;
+        transform-origin: left;
+        -webkit-transition-duration: .5s;
+        transition-duration: .5s;
+        -webkit-transition-timing-function: cubic-bezier(.075, .82, .165, 1);
+        transition-timing-function: cubic-bezier(.075, .82, .165, 1);
+        -webkit-transition-property: -webkit-transform;
+        transition-property: -webkit-transform;
+        transition-property: transform;
+        transition-property: transform, -webkit-transform;
+        -webkit-transition-delay: 1s;
+        transition-delay: 1s;
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 2;
+            background-color: $base_color;
+            -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+            -webkit-transform-origin: right;
+            transform-origin: right;
+            -webkit-transition-duration: 1.5s;
+            transition-duration: 1.5s;
+            -webkit-transition-timing-function: cubic-bezier(.075, .82, .165, 1);
+            transition-timing-function: cubic-bezier(.075, .82, .165, 1);
+            -webkit-transition-property: -webkit-transform;
+            transition-property: -webkit-transform;
+            transition-property: transform;
+            transition-property: transform, -webkit-transform;
+            -webkit-transition-delay: 1.5s;
+            transition-delay: 1.5s;
+        }
+    }
+    
+    .tittle_slide_effect.active .tittle_slide_effect_in {
+        transform: scaleX(1);
+        &:before {
+            -webkit-transform: scale(0, 1);
+            transform: scale(0, 1);
+        }
+    }
+    .single_multiScroll{
+        &.active{
+            h5{
+                animation: fadeInLeft 0.7s both .7s;
+            }
+            p{
+                animation: fadeInLeft 1.1s both 1.1s;
+            }
+            .cu_btn{
+                animation: fadeInLeft 1.3s both 1.3s;
+            }
+        }
+    }
+    
+}
+
+#multiscroll-nav{
+    &.right{
+        right: 40px;
+    }
+    li {
+        display: block;
+        width: 20px;
+        height: 13px;
+        margin: 8px 0;
+    }
+    span{
+        height: 2px;
+        width: 20px;
+        border: 0px solid transparent;
+        border-radius: 0;
+        background-color: #b6a2a1;
+        right: 0;
+        left: auto;
+        @include transform_time(.3s);
+    }
+    .active{
+        span{
+            width: 40px;
+            background-color: $black;
+        }
+    }
+} 
