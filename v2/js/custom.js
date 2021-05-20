@@ -12,38 +12,38 @@
     });
 
     //offerbook modal js
-    var offerbookmodal = document.getElementById("offerbookmodal");
-    if (offerbookmodal) {
-        setTimeout(function () {
-            $(document).ready(function () {
-                var key1 = 'hadoffer',
-                    hadoffer = localStorage.getItem(key1);
-                if (!hadoffer) {
-                    $('#offerbookmodal').modal('show');
-                }
-                $('#offerbookmodal').on('shown.bs.modal', function () {
-                    localStorage.setItem(key1, true);
-                })
-            });
-        }, 10000);
-    }
+    // var offerbookmodal = document.getElementById("offerbookmodal");
+    // if (offerbookmodal) {
+    //     setTimeout(function () {
+    //         $(document).ready(function () {
+    //             var key1 = 'hadoffer',
+    //                 hadoffer = localStorage.getItem(key1);
+    //             if (!hadoffer) {
+    //                 $('#offerbookmodal').modal('show');
+    //             }
+    //             $('#offerbookmodal').on('shown.bs.modal', function () {
+    //                 localStorage.setItem(key1, true);
+    //             })
+    //         });
+    //     }, 10000);
+    // }
 
-    //newslettermodal modal js
-    var newslettermodal = document.getElementById("newslettermodal");
-    if (newslettermodal) {
-        setTimeout(function () {
-            $(document).ready(function () {
-                var key = 'hadModal',
-                    hadModal = localStorage.getItem(key);
-                if (!hadModal) {
-                    $('#newslettermodal').modal('show');
-                }
-                $('#newslettermodal').on('shown.bs.modal', function () {
-                    localStorage.setItem(key, true);
-                })
-            });
-        }, 10000);
-    }
+    // //newslettermodal modal js
+    // var newslettermodal = document.getElementById("newslettermodal");
+    // if (newslettermodal) {
+    //     setTimeout(function () {
+    //         $(document).ready(function () {
+    //             var key = 'hadModal',
+    //                 hadModal = localStorage.getItem(key);
+    //             if (!hadModal) {
+    //                 $('#newslettermodal').modal('show');
+    //             }
+    //             $('#newslettermodal').on('shown.bs.modal', function () {
+    //                 localStorage.setItem(key, true);
+    //             })
+    //         });
+    //     }, 10000);
+    // }
 
     //menu icon
     $('.close_icon').on('click', function () {
@@ -139,7 +139,7 @@
             speed: 1000,
             autoplay: true,
             autoplay: {
-                delay: 3000,
+                delay: 500000,
                 disableOnInteraction: false,
             },
             pagination: {
@@ -147,8 +147,8 @@
                 type: 'fraction',
             },
             navigation: {
-                nextEl: '.swiper_next',
-                prevEl: '.swiper_prev',
+                nextEl: '.swiper_prev',
+                prevEl: '.swiper_next',
             },
         });
         $('.swiper-slide').on('mouseover', function () {
