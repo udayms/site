@@ -107,6 +107,9 @@
         &.bg_4 {
             background-color: #f3a057;
         }
+        &.bg_5 {
+            background-color: #c257f3;
+        }
         @media #{$mobile}{
             position: relative;
             z-index: 2;
