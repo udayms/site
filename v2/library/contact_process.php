@@ -15,7 +15,7 @@
 
     $subject = "You have a message from your droitlab.";
 
-    $logo = 'img/logo.png';
+    $logo = '../img/logo.png';
     $link = '#';
 
 	$body = "<!DOCTYPE html><html lang='en'><head><meta charset='UTF-8'><title>Express Mail</title></head><body>";
