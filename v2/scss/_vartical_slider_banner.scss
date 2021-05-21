@@ -175,7 +175,7 @@
     }
     .swiper-slide-active {
         .banner_content {
-            h2 {
+            h2, span {
                 animation: fadeInUp2 1s both 1.2s;
             }
 
