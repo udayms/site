@@ -8,20 +8,20 @@ var gulp =            require('gulp'),
     htmlmin =         require('gulp-htmlmin');
 
 // Static Server + watching scss/html files.
-gulp.task('serve', ['sass', 'nunjucks-html-watch'], function() {
-    // browserSync.init({
-    //     server: './build'
-    // });
+// gulp.task('serve', ['sass', 'nunjucks-html-watch'], function() {
+//     // browserSync.init({
+//     //     server: './build'
+//     // });
 
-    gulp.watch('css/dev/*.scss', ['sass']);
-    gulp.watch('./**/*.html', ['nunjucks-html-watch'])
-});
+//     gulp.watch('css/dev/*.scss', ['sass']);
+//     gulp.watch('./**/*.html', ['nunjucks-html-watch'])
+// });
 
-gulp.task('compressJs', function () {
-    return gulp.src('js/*.js')
-        .pipe(uglify())
-        .pipe(gulp.dest('build/js'))
-});
+// gulp.task('compressJs', function () {
+//     return gulp.src('js/*.js')
+//         .pipe(uglify())
+//         .pipe(gulp.dest('build/js'))
+// });
 
 gulp.task('compressImage', function () {
     return gulp.src('img/**')
@@ -33,16 +33,17 @@ gulp.task('compressImage', function () {
 });
 
 gulp.task('nunjucks', function() {
-  return gulp.src('pages/**/*.+(html|nunjucks)')
+  nunjucksRender.nunjucks.configure(['v2/**/*.html']);
+  return gulp.src(['v2/partials/*.html', '!v2/library/*.*', '!v2/vendors/*.*', '!v2/scss/*.*', '!v2/documentation/*.*'])
     .pipe(nunjucksRender({
-      path: ['templates']
+      path: ['.']
     }))
     .pipe(htmlmin(
       {
-        collapseWhitespace: true,
-        removeComments: true
+        collapseWhitespace: false,
+        removeComments: false
       }))
-    .pipe(gulp.dest('build'))
+    .pipe(gulp.dest('v2/build'))
 });
 
 // Create a task that ensures the `nunjucks` task is complete before reloading browsers.
@@ -50,23 +51,27 @@ gulp.task('nunjucks', function() {
 //   browserSync.reload();
 // });
 
-gulp.task('vendors-scripts', function() {
-  return gulp.src([
-      './node_modules/jquery/dist/jquery.min.js'])
-    .pipe(concat('vendors.js'))
-    .pipe(gulp.dest('build/js/'));
-});
+// gulp.task('vendors-scripts', function() {
+//   return gulp.src([
+//       './node_modules/jquery/dist/jquery.min.js'])
+//     .pipe(concat('vendors.js'))
+//     .pipe(gulp.dest('build/js/'));
+// });
 
 gulp.task('copy-files', function() {
-  gulp.src([
-    'config/web.config'
-  ])
-  .pipe(gulp.dest('build'));
+  return gulp.src([
+    'v2/css/**/*',
+    'v2/fonts/**/*',
+    'v2/img/**/*',
+    'v2/js/**/*',
+    'v2/vendors/**/*'
+  ], { 'base':'./v2/' } )
+  .pipe(gulp.dest('v2/build'))
 });
 
 // Compile project.
-gulp.task('build-project',
-  ['compressImage', 'compressJs', 'nunjucks', 'vendors-scripts', 'copy-files']);
+// gulp.task('build-project',
+//   ['compressImage', 'compressJs', 'nunjucks', 'vendors-scripts', 'copy-files']);
 
 // Compile and start project.
-gulp.task('default', ['build-project', 'serve']);
+// gulp.task('default', ['build-project', 'serve']);

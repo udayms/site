@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Reach Me</title>
+    <link rel="icon" href="img/favicons/favicon.ico" type="image/ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="img/favicons/site.webmanifest">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- animate CSS -->
+    <link rel="stylesheet" href="css/animate.css" />
+    <!-- themify icon CSS -->
+    <link rel="stylesheet" href="vendors/themify_icons/themify-icons.css" />
+    <!-- style CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+    <!-- header part -->
+    {% set page = { 'menuHighlight': 'contact' } %}
+    {% include "v2/partials/_header.html" %}
+    <!-- header part end -->
+
+    <!--  off_canvus_menu -->
+    {% include "v2/partials/_off-canvas.html" %}
+    <!--  off canvus menu -->
+
+    <!-- breadcrumb part -->
+    {% include "v2/partials/_breadcrumbs.html" %}
+    <!-- breadcrumb part end -->
+
+    <!-- instructor list part here -->
+    {% include "v2/partials/_contact-info.html" %} 
+    <!-- instructor list part end -->
+
+    <!-- contact form part -->
+    {# include "v2/partials/_contact-form.html" #} 
+    <!-- contact form part -->
+
+    <!-- footer part here -->
+    {% include "v2/partials/_footer.html" %}
+
+    <!-- jquery slim -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <!-- popper js -->
+    <script src="js/popper.min.js"></script>
+    <!-- bootstarp js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- parallax js -->
+    <script src="vendors/parallax/parallax.js"></script>
+    <script src="vendors/parallax/breadctumb_parallax.js"></script>
+    <!-- wow js -->
+    <script src="vendors/wow/wow.min.js"></script>
+    <!--gmaps Js-->
+    <script type="text/javascript"
+        src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyDs3mrTgrYd6_hJS50x4Sha1lPtS2T-_JA">
+    </script>
+    <script src="vendors/gmp3/map.js"></script>
+    <!-- imagesloaded js -->
+    <script src="vendors/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <!-- contact js -->
+    <script src="vendors/contact/jquery.form.js"></script>
+    <script src="vendors/contact/jquery.validate.min.js"></script>
+    <script src="vendors/contact/contact.js"></script>
+    <!-- custom js -->
+    <script src="js/custom.js"></script>
+</body>
+
+</html>
