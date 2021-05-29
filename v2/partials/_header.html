@@ -22,17 +22,17 @@
                     <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                         <ul class="navbar-nav">
                             <li class="nav-item dropdown menu_list">
-                                <a class="nav-link {{ 'font-weight-bold' if page.menuHighlight == 'work'  }}" href="index.html" aria-haspopup="false" aria-expanded="false">
-                                    work
+                                <a class="nav-link {{ 'font-weight-bold' if page.menu.highlight == 'work' else ('font-weight-bold' if page.menu.highlight == 'workdetails') }}" href="index.html" aria-haspopup="false" aria-expanded="false">
+                                    {{ 'work' if page.menu.highlight == 'work' else 'back'}}
                                 </a>
                             </li>
                             <li class="nav-item dropdown menu_list">
-                                <a class="nav-link {{ 'font-weight-bold' if page.menuHighlight == 'about'  }}" href="about.html" aria-haspopup="false" aria-expanded="false">
+                                <a class="nav-link {{ 'font-weight-bold' if page.menu.highlight == 'about'  }}" href="about.html" aria-haspopup="false" aria-expanded="false">
                                     about
                                 </a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link {{ 'font-weight-bold' if page.menuHighlight == 'contact'  }}" href="contact.html" aria-haspopup="false" aria-expanded="false">
+                                <a class="nav-link {{ 'font-weight-bold' if page.menu.highlight == 'contact'  }}" href="contact.html" aria-haspopup="false" aria-expanded="false">
                                     contact
                                 </a>
                             </li>
