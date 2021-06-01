@@ -1,0 +1,36 @@
+
+{% for project in page.projects %}
+<div class="swiper-slide thumb_slide_effect">
+    <div class="vartical_slider_banner_iner bg_{{project.id}}">
+        <div class="container">
+            <div class="row justify-content-end justify-content-xl-between align-items-center">
+                <div class="col-xl-5 col-md-4">
+                    <div class="banner_content">
+                        <div class="text_fadeup">
+                            <h2>{{project.impact}}</h2>
+                        </div>
+                        <div class="text_fadeup">
+                            <h2>{{ project.feature | safe }}</h2>
+                        </div>
+                        <div class="text_fadeup">
+                            <h2>{{ project.context }}</h2>
+                        </div>
+                        <div class="text_fadeup">
+                            <a href="{{ project.url }}">View Project <img src="img/long_arrow.png" alt="View Project"> </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-7 col-md-7">
+                    <div class="banner_img_content">
+                        <div class="thumb_slide_effect_in">
+                            <img src="img/prj-scrshots/{{ project.image }}.png" alt="#" class="banner_img img-fluid">
+                        </div>
+                        <img src="img/vartical_banner/banner_img_shape.png" alt="#"
+                            class="banner_shape img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endfor %}
