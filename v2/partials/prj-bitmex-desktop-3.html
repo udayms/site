@@ -1,56 +1,64 @@
 {% set page = {
-    id: 4,
+    id: 6,
     menu: {
     'highlight': 'workdetails'
     },
     banner: {
-    'project_name': 'CLI Trading',
-    'company': 'BitMEX',
+    'project_name': 'Methodics IPLM',
+    'company': 'Perforce',
     'platform': 'Desktop'
     },
     metrics: {
-    'company': 'BitMEX',
-    'role': 'Product Designer',
-    'year': '2018-2020',
-    'duration': '4',
-    'site': 'bitmex.com',
-    'link': 'https://www.bitmex.com'
+    'company': 'Perforce Inc.',
+    'role': 'Director, Product & Customer Experience',
+    'year': '2015-2018',
+    'site': 'perforce.com',
+    'link': 'https://www.perforce.com/products/methodics-iplm'
     },
     summary: {
-    'heading': 'Command Line Interface for Trading',
-    'text': '<p>During the 3 years I was with BitMEX, I along with the UX team initiated and ran multiple blue sky ideas with multiple goals like increasing user engagement on the platform, making trading safer for newbie traders and also making trading quicker for expert traders. The CLI trading feature was one such experiment that geneated a lot of excitement within the organziation leadership team.</p> <p>The core idea behind this exploration was to create a command line interface that expert traders can use to execute trades using a combination of simple commands. For ex: <kbd>+1.2k @46235 /5x</kbd>, will place an order for buying 1200 contracts (of the instrument that user is on) at a limit price of $46235 using a leverage of 5x.</p>'
+    'heading': 'BitMEX Mobile App',
+    'text': '<p>BitMEX Mobile allows users to manage all critical account features, and provides access to BitMEX’s full
+        range of innovative products. Available in Google Play Store and Apple App Store in over 140 countries
+        worldwide (except select geographies like US, Cuba, Iran). </p>
+    
+    <p>My team and I had the opportunity to design the official mobile application from the scratch. </p>
+    
+    <p>The app was an instant hit with over $5B in trade volume resulting in a revenue of over $2M in the first six
+        months of launch. Over 50k installations in the first 6 months and drove a 144% quarter over quarter revenue
+        growth.</p>'
     },
     context: {
-    heading: 'First of its kind exploratory feature that empowers expert retail traders to execute multiple complex trades with a single command.',
+    heading: 'A high traffic screen where the customer makes the decision to open, close or amend a position.',
     text: '<div class="row">
         <div class="col-lg-4">
-            <h6>Prototype Goals</h6>
+            <h6>Customer Goals</h6>
             <ul>
-                <li>Create an immersive and interactive prototype on the testnet environment</li>
-                <li>Show preview of the order as the user types the command</li>
-                <li>Support simple commands like navigation, simple buy/sell orders & more complex commands to execute multiple orders in a single line using market data</li>
+                <li>Understand the current market</li>
+                <li>Easily access and read critical information, while on the move </li>
             </ul>
         </div>
         <div class="col-lg-4">
-            <h6>Prototyping Stack</h6>
+            <h6>Product Goals</h6>
             <ul>
-                <li>Tampermonkey, Chrome DevTools</li>
-                <li>NodeJS, Postman API tool, VS Code debugger</li>
+                <li>Provide appropriate information to the user to help them make right & quick financial decisions</li>
             </ul>
         </div>
         <div class="col-lg-4">
-            <h6>Design Wins</h6>
+            <h6>Design Challenges</h6>
             <ul>
-                <li>High excitement in early user tests and SME feedback sessions</li>
-                <li>Retail traders saw this as the closest they can get to feel like a quant trader</li>
-                <li>Task completion sped up by 46% in controlled test sessions</li>
-                <li>Seeing the prototype working within testnet environment helped raise confidence in engineering counterparts on the feasibility of the idea</li>
+                <li>Large amount of different data with similar priority</li>
+                <li>Design to avoid fat-fingering errors</li>
+                <li>Constantly changing multiple pieces of information </li>
             </ul>
         </div>
     </div>'
     },
-    win: 'Created a prototype that leverages existing APIs and runs on testnet environment',
-    contribution: 'Created the original design and prototyped it for demoing to stakeholders and collect feedback from internal subject matter experts.'
+    screenshots: [ '1-prj-bitmex-mobile-1', '2-prj-bitmex-mobile-1', '3-prj-bitmex-mobile-1'],
+    win: 'Designed a high traffic screen with very complex information architecture to accurately reflect the dynamic and
+    constantly changing nature of the platform without wearing out or overwhelming the user.',
+    contribution: 'Understanding how traders do technical analysis and the markers traders look for in a candlestick chart.
+    Working through 18+ pieces of data points to prioritize what needs to be displayed and where on the the mobile screen
+    will it be most useful for the trader.'
     }
     %}
     <!DOCTYPE html>

@@ -31,10 +31,10 @@
             letter-spacing: -3px;
             line-height: 1.1;
             margin-bottom: 0;
-            @include transform_time(.3s);
+            @include transform_time(.1s);
             span{
                 line-height: 1;
-                @include transform_time(.3s);
+                @include transform_time(.1s);
                 @media #{$mobile}{
                     line-height: 1.3;
                 }

@@ -18,10 +18,12 @@
                 <h5>Site</h5>
                 <p> <a href="{{ page.metrics.link }}" target="_blank">{{ page.metrics.site }}</a></p>
             </div>
+            {% if page.metrics.duration %}
             <div class="single_content_list">
                 <h5>Duration</h5>
                 <p>{{ page.metrics.duration }} Weeks</p>
             </div>
+            {% endif %}
             <!-- <div class="single_content_list">
                 <h5>Share:</h5>
                 <div class="social_icon">

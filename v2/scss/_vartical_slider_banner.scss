@@ -110,6 +110,9 @@
         &.bg_5 {
             background-color: #c257f3;
         }
+        &.bg_6 {
+            background-color: #82a35d;
+        }
         @media #{$mobile}{
             position: relative;
             z-index: 2;
@@ -176,11 +179,11 @@
     .swiper-slide-active {
         .banner_content {
             h2, span {
-                animation: fadeInUp2 1s both 1.2s;
+                animation: fadeInUp2 1s both .2s;
             }
 
             a {
-                animation: fadeInUp2 1s both 1.5s;
+                animation: fadeInUp2 1s both .5s;
             }
         }
 
@@ -324,6 +327,14 @@
         &.bg_4 {
             background-color: #f3a057;
         }
+        
+        &.bg_5 {
+            background-color: #c257f3;
+        }
+
+        &.bg_6 {
+            background-color: #82a35d;
+        }
     }
 
 
@@ -463,13 +474,13 @@
             p{
                 overflow: hidden;
                 display: block;
-                animation: fadeInRight 1s both 1.3s;
+                animation: fadeInRight 1s both .3s;
 
             }
             h2{
                 overflow: hidden;
                 display: block;
-                animation: fadeInRight 1s both 1.5s;
+                animation: fadeInRight 1s both .5s;
 
             }
         }
