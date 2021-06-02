@@ -283,6 +283,7 @@
         background: -moz-linear-gradient( 0deg, rgb(254,66,47) 0%, rgb(254,81,150) 100%);
         background: -webkit-linear-gradient( 0deg, rgb(254,66,47) 0%, rgb(254,81,150) 100%);
         background: -ms-linear-gradient( 0deg, rgb(254,66,47) 0%, rgb(254,81,150) 100%);
+        background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
@@ -291,6 +292,7 @@
     background: -moz-linear-gradient( 0deg, rgb(254,66,47) 0%, rgb(254,81,150) 100%);
     background: -webkit-linear-gradient( 0deg, rgb(254,66,47) 0%, rgb(254,81,150) 100%);
     background: -ms-linear-gradient( 0deg, rgb(254,66,47) 0%, rgb(254,81,150) 100%);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     display: inline-block;
