@@ -96,6 +96,10 @@
             padding-left: 0;
         }
 
+        p {
+            margin-top: 25px;
+        }
+
         h5 {
             font-size: 16px;
             color: $base_color;
@@ -288,7 +292,7 @@
     position: relative;
     z-index: 1;
     &.sec_padding{
-        padding: 105px 0 120px;
+        padding: 105px 0 75px;
         @media #{$tab}{
             padding: 50px 0 70px;
         }
@@ -350,9 +354,11 @@
             }
         }
 
-        p {
+        p, ul {
             color: #7d7d7d;
+            margin-top: 25px;
         }
+
     }
 
     .social_icon {
@@ -465,6 +471,7 @@
             p{
                 color: rgba($color: $white, $alpha: .5);
                 font-weight: 400;
+                margin-top: 25px;
             }
     
             .cu_btn {

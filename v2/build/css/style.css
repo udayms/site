@@ -2903,6 +2903,7 @@ button:focus {
     background: -moz-linear-gradient(0deg, #fe422f 0%, #fe5196 100%);
     background: -webkit-linear-gradient(0deg, #fe422f 0%, #fe5196 100%);
     background: -ms-linear-gradient(0deg, #fe422f 0%, #fe5196 100%);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; }
 
@@ -2910,6 +2911,7 @@ button:focus {
   background: -moz-linear-gradient(0deg, #fe422f 0%, #fe5196 100%);
   background: -webkit-linear-gradient(0deg, #fe422f 0%, #fe5196 100%);
   background: -ms-linear-gradient(0deg, #fe422f 0%, #fe5196 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block; }
@@ -2987,6 +2989,8 @@ button:focus {
     @media (max-width: 767.98px) {
       .about_section .about_section_content {
         padding-left: 0; } }
+    .about_section .about_section_content p {
+      margin-top: 25px; }
     .about_section .about_section_content h5 {
       font-size: 16px;
       color: #ff7070;
@@ -3128,7 +3132,7 @@ button:focus {
   position: relative;
   z-index: 1; }
   .about_me_section.sec_padding {
-    padding: 105px 0 120px; }
+    padding: 105px 0 75px; }
     @media (max-width: 991px) {
       .about_me_section.sec_padding {
         padding: 50px 0 70px; } }
@@ -3176,8 +3180,9 @@ button:focus {
         margin-bottom: 15px; } }
     .about_me_section .about_section_content h2 span {
       color: #ff7a7a; }
-  .about_me_section .about_section_content p {
-    color: #7d7d7d; }
+  .about_me_section .about_section_content p, .about_me_section .about_section_content ul {
+    color: #7d7d7d;
+    margin-top: 25px; }
   .about_me_section .social_icon {
     float: left;
     margin-top: 44px; }
@@ -3264,7 +3269,8 @@ button:focus {
           margin-bottom: 10px; } }
     .about_us_section.dark_version .about_section_content p {
       color: rgba(255, 255, 255, 0.5);
-      font-weight: 400; }
+      font-weight: 400;
+      margin-top: 25px; }
     .about_us_section.dark_version .about_section_content .cu_btn {
       margin-top: 47px;
       padding: 18px 35px;
@@ -9303,6 +9309,9 @@ button:focus {
   margin-bottom: 28px; }
   .portfolio_content_details p:last-child {
     margin-bottom: 0; }
+
+.portfolio_content_details.sec_padding {
+  margin-top: 50px; }
 
 .portfolio_details_gallery {
   position: relative;

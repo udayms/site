@@ -1,4 +1,4 @@
-<section class="testimonial_section navText">
+<section class="testimonial_section navText padding_top">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-sm-10">
@@ -13,12 +13,12 @@
                     <div class="single_testimonial_slider">
                         <img src="img/icon/contributions.png" alt="#">
                         <h5>Most Significant Contribution</h5>
-                        <p>{{page.contribution}}</p>
+                        <p>{{page.contribution | safe }}</p>
                     </div>
                     <div class="single_testimonial_slider">
                         <img src="img/icon/wins.png" alt="#">
                         <h5>Most Significant Win </h5>
-                        <p>{{page.win}}</p>
+                        <p>{{page.win | safe }}</p>
                     </div>
                 </div>
             </div>
