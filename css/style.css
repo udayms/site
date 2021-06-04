@@ -212,7 +212,7 @@ input:focus {
       padding: 70px 0px; } }
 
 .padding_top {
-  padding-top: 120px; }
+  padding-top: 100px; }
   @media (max-width: 991px) {
     .padding_top {
       padding-top: 70px; } }
@@ -221,7 +221,7 @@ input:focus {
       padding-top: 100px; } }
 
 .padding_bottom {
-  padding-bottom: 120px; }
+  padding-bottom: 100px; }
   @media (max-width: 991px) {
     .padding_bottom {
       padding-bottom: 70px; } }
