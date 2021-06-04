@@ -1090,7 +1090,7 @@
     var typed_text = $(".typed_text");
     if (typed_text.length) {
         typed_text.typed({
-            strings: ["designer", "prototyper", "design leader", "mentor", "startup coach", "product manager"],
+            strings: ["Designer", "Prototyper", "Design Leader", "Mentor", "Startup Coach", "Product Manager"],
             stringsElement: null,
             typeSpeed: 100,
             startDelay: 500,
