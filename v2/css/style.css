@@ -3922,18 +3922,23 @@ button:focus {
       position: absolute;
       bottom: 0;
       left: 0;
-      padding: 28px 40px; }
+      padding: 28px 40px;
+      background-color: #000;
+      width: 100%;
+      opacity: 0.65; }
       .portfolio_section .single_portfolio_section .single_portfolio_content h4 {
         font-size: 30px;
         font-weight: 700;
         margin-bottom: 0;
         font-family: Futura; }
         .portfolio_section .single_portfolio_section .single_portfolio_content h4 a {
-          color: #051441; }
+          color: #fff;
+          font-weight: 400; }
           .portfolio_section .single_portfolio_section .single_portfolio_content h4 a:hover {
             color: #ff7070; }
       .portfolio_section .single_portfolio_section .single_portfolio_content p {
-        font-size: 16px; }
+        font-size: 16px;
+        color: #fff; }
     .portfolio_section .single_portfolio_section.full_width_portfolio .single_portfolio_content {
       bottom: auto;
       top: 47px; }
