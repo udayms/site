@@ -1,0 +1,146 @@
+{% set page = { menu: {
+'highlight': 'work'
+}, projects: [
+{
+id: 1,
+impact: '<span>Redefining</span>',
+feature: 'Market monitoring ',
+context: 'experience',
+company: 'BitMEX',
+'url': 'prj-bitmex-mobile-1.html',
+'image': 'portfolio-bitmex-mobile-1'
+},
+{
+id: 2,
+impact: '<span>Increasing</span>',
+feature: 'Customer trust with the best',
+context: 'wallet experience',
+company: 'BitMEX',
+'url': 'prj-bitmex-mobile-2.html',
+'image': 'portfolio-bitmex-mobile-2'
+},
+{
+id: 3,
+impact: '<span>Improving</span>',
+feature: 'realtime chat experience in ',
+context: 'Trollbox',
+company: 'BitMEX',
+'url': 'prj-bitmex-mobile-3.html',
+'image': 'portfolio-bitmex-mobile-3'
+},
+{
+id: 4,
+impact: '<span>Optimizing</span>',
+feature: 'execution speed ',
+context: 'for expert traders',
+company: 'BitMEX',
+'url': 'prj-bitmex-desktop-1.html',
+'image': 'portfolio-bitmex-desktop-1'
+},
+{
+id: 5,
+impact: '<span>Helping</span> customers',
+feature: 'secure their accounts on',
+context: 'the platform',
+company: 'BitMEX',
+'url': 'prj-bitmex-desktop-2.html',
+'image': 'portfolio-bitmex-desktop-2'
+},
+{
+id: 6,
+impact: '<span>Creating</span>',
+feature: 'a novel experience for',
+context: 'IPLM customers',
+company: 'Perforce',
+'url': 'prj-bitmex-desktop-3.html',
+'image': 'portfolio-bitmex-desktop-3'
+}
+
+]
+
+}
+%}
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Uday Shankar</title>
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- animate CSS -->
+    <link rel="stylesheet" href="css/animate.css" />
+    <!-- themify icon CSS -->
+    <link rel="stylesheet" href="vendors/themify_icons/themify-icons.css" />
+    <!-- owl carousel CSS -->
+    <link rel="stylesheet" href="vendors/swiper/swiper.min.css" />
+    <!-- icomoon CSS -->
+    <link rel="stylesheet" href="vendors/icomoon/style.css" />
+    <!-- style CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+</head>
+
+<body>
+    <!-- header part -->
+    {% include "v2/partials/_header.html" %}
+    <!-- header part end -->
+
+    <!-- banner part here -->
+    <section class="vartical_slider_banner swiper-container" id="vartical_slider_banner">
+        <div class="swiper-wrapper">
+
+            {% include "v2/partials/_projects.html" %}
+
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination custom_pagination"></div>
+        <!-- Add Arrows -->
+        <div class="swiper_controler">
+            <div class="swiper_next"> <img src="img/icon/arrow_top.png" alt="#"> </div>
+            <div class="swiper_prev"> <img src="img/icon/arrow_bottom.png" alt="#"> </div>
+        </div>
+
+    </section>
+    <!-- banner part end -->
+
+    <!-- footer part here -->
+    <footer class="sticky_footer_part">
+        <div class="container-fluid">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-lg-12">
+                    <div class="sticky_footer_content">
+                        <p>© 2020 Uday Shankar</p>
+                        <div class="social_icon">
+                            <a href="https://www.github.com/udayms" target="_blank"><i class="ti-github"></i></a>
+                            <a href="https://www.linkedin.com/in/udayms" target="_blank"><i class="ti-linkedin"></i></a>
+                            <a href="https://www.twitter.com/udayms" target="_blank"><i class="ti-twitter-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer part end -->
+
+    <!-- jquery slim -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <!-- popper js -->
+    <script src="js/popper.min.js"></script>
+    <!-- bootstarp js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- swiper js -->
+    <script src="vendors/swiper/swiper.min.js"></script>
+    <!-- wow js -->
+    <script src="vendors/wow/wow.min.js"></script>
+    <!-- imagesloaded js -->
+    <script src="vendors/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <!-- custom js -->
+    <script src="js/custom.js"></script>
+
+</body>
+
+</html>

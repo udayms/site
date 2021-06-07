@@ -311,6 +311,7 @@
             font-size: 72px;
             color: $white;
             margin-top: 7px;
+            text-shadow: 1px 1px #333;
             @media #{$tab}{
                 font-size: 35px;
             }

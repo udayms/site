@@ -354,9 +354,18 @@
             }
         }
 
-        p, ul {
+        p {
             color: #7d7d7d;
             margin-top: 25px;
+        }
+        
+        ul {
+            color: #7d7d7d;
+            margin-top: 25px;
+
+            li {
+                margin-left: -40px;
+            }
         }
 
     }

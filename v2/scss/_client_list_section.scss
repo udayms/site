@@ -1,13 +1,13 @@
 .client_list_section{
     padding: 120px 0 75px;
         @media #{$mobile}{
-            padding: 70px 0 50px;
+            padding: 30px 0 50px;
         }
         @media #{$tab_device}{
-            padding: 70px 0 50px;
+            padding: 30px 0 50px;
         }
         @media #{$medium_device}{
-            padding: 70px 0 50px;
+            padding: 30px 0 50px;
         }
         .section_tittle{
             h2{
