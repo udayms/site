@@ -3923,9 +3923,8 @@ button:focus {
       bottom: 0;
       left: 0;
       padding: 28px 40px;
-      background-color: #000;
-      width: 100%;
-      opacity: 0.65; }
+      background-color: rgba(0, 0, 0, 0.65);
+      width: 100%; }
       .portfolio_section .single_portfolio_section .single_portfolio_content h4 {
         font-size: 30px;
         font-weight: 700;
@@ -5550,7 +5549,7 @@ button:focus {
           border: 1px solid #ff7070;
           color: #fff; }
   .profile_info.style_3 {
-    padding: 230px 0 210px; }
+    padding: 150px 0 10px; }
     @media (max-width: 991px) {
       .profile_info.style_3 {
         padding: 170px 0 50px; } }
