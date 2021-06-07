@@ -523,7 +523,7 @@
             dots: false,
             autoplay: true,
             autoplayHoverPause: true,
-            smartSpeed: 500,
+            smartSpeed: 2000,
             rtl: false,
             responsive: {
                 0: {
