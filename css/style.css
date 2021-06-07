@@ -2929,6 +2929,8 @@ button:focus {
     position: relative;
     min-height: 490px;
     z-index: -1; }
+    .about_section .img_section .circle_mask {
+      clip-path: circle(210px at center); }
     @media (max-width: 767.98px) {
       .about_section .img_section {
         min-height: 410px; } }
@@ -3157,6 +3159,8 @@ button:focus {
         display: none; } }
   .about_me_section .img_section {
     padding-right: 65px; }
+    .about_me_section .img_section .circle_mask {
+      clip-path: circle(180px at center); }
     @media (max-width: 991px) {
       .about_me_section .img_section {
         padding-right: 0; } }
@@ -3180,9 +3184,14 @@ button:focus {
         margin-bottom: 15px; } }
     .about_me_section .about_section_content h2 span {
       color: #ff7a7a; }
-  .about_me_section .about_section_content p, .about_me_section .about_section_content ul {
+  .about_me_section .about_section_content p {
     color: #7d7d7d;
     margin-top: 25px; }
+  .about_me_section .about_section_content ul {
+    color: #7d7d7d;
+    margin-top: 25px; }
+    .about_me_section .about_section_content ul li {
+      margin-left: -40px; }
   .about_me_section .social_icon {
     float: left;
     margin-top: 44px; }
@@ -3892,7 +3901,9 @@ button:focus {
 
 .portfolio_section {
   position: relative;
-  z-index: 1; }
+  z-index: 1;
+  padding-top: 120px !important;
+  padding-bottom: 0px !important; }
   .portfolio_section .portfolio_shape {
     position: absolute;
     bottom: 150px;
@@ -4891,13 +4902,13 @@ button:focus {
   padding: 120px 0 75px; }
   @media (max-width: 767.98px) {
     .client_list_section {
-      padding: 70px 0 50px; } }
+      padding: 30px 0 50px; } }
   @media only screen and (min-width: 768px) and (max-width: 991.98px) {
     .client_list_section {
-      padding: 70px 0 50px; } }
+      padding: 30px 0 50px; } }
   @media only screen and (min-width: 992px) and (max-width: 1199.98px) {
     .client_list_section {
-      padding: 70px 0 50px; } }
+      padding: 30px 0 50px; } }
   .client_list_section .section_tittle h2 {
     font-family: Futura;
     font-weight: 400; }
@@ -5558,8 +5569,8 @@ button:focus {
       position: relative;
       z-index: 1; }
       .profile_info.style_3 .profile_info_iner h3 {
-        font-size: 64px;
-        font-weight: 500;
+        font-size: 50px;
+        font-weight: 100;
         line-height: 1.3; }
         @media (max-width: 767.98px) {
           .profile_info.style_3 .profile_info_iner h3 {
@@ -6666,7 +6677,8 @@ button:focus {
   .breadcrumb_part.portfolio_breadcrumb h3 {
     font-size: 72px;
     color: #fff;
-    margin-top: 7px; }
+    margin-top: 7px;
+    text-shadow: 1px 1px #333; }
     @media (max-width: 991px) {
       .breadcrumb_part.portfolio_breadcrumb h3 {
         font-size: 35px; } }
@@ -10511,7 +10523,7 @@ button:focus {
     visibility: visible; }
 
 .footer_section {
-  padding: 120px 0 37px;
+  padding: 10px 0 37px;
   position: relative; }
   @media (max-width: 767.98px) {
     .footer_section {
