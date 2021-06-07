@@ -14,6 +14,10 @@
         min-height: 490px;
         z-index: -1;
 
+        .circle_mask {
+            clip-path: circle(210px at center);
+        }
+
         @media #{$mobile} {
             min-height: 410px;
         }
@@ -320,6 +324,10 @@
     }
     .img_section {
         padding-right: 65px;
+
+        .circle_mask {
+            clip-path: circle(180px at center);
+        }
 
         @media #{$tab} {
             padding-right: 0;

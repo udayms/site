@@ -2929,6 +2929,8 @@ button:focus {
     position: relative;
     min-height: 490px;
     z-index: -1; }
+    .about_section .img_section .circle_mask {
+      clip-path: circle(210px at center); }
     @media (max-width: 767.98px) {
       .about_section .img_section {
         min-height: 410px; } }
@@ -3157,6 +3159,8 @@ button:focus {
         display: none; } }
   .about_me_section .img_section {
     padding-right: 65px; }
+    .about_me_section .img_section .circle_mask {
+      clip-path: circle(180px at center); }
     @media (max-width: 991px) {
       .about_me_section .img_section {
         padding-right: 0; } }
@@ -3897,7 +3901,9 @@ button:focus {
 
 .portfolio_section {
   position: relative;
-  z-index: 1; }
+  z-index: 1;
+  padding-top: 120px !important;
+  padding-bottom: 0px !important; }
   .portfolio_section .portfolio_shape {
     position: absolute;
     bottom: 150px;
@@ -10517,7 +10523,7 @@ button:focus {
     visibility: visible; }
 
 .footer_section {
-  padding: 120px 0 37px;
+  padding: 10px 0 37px;
   position: relative; }
   @media (max-width: 767.98px) {
     .footer_section {
