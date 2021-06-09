@@ -1,0 +1,131 @@
+{% set page = {
+    id: 7,
+    menu: {
+    'highlight': 'workdetails'
+    },
+    banner: {
+    'project_name': 'Product Studios @',
+    'platform': 'Enterprise'
+    },
+    metrics: {
+    'role': 'Sr Manager, Prototyping & Front End',
+    'year': '2011-2015',
+    'site': 'hpe.com',
+    'link': 'https://www.hpe.com/us/en/home.html'
+    },
+    summary: {
+    'heading': 'Multiple Roles, Projects, and Domains',
+    'text': '<p>My initial charter at HPE was to establish the new Product Innovation Studio. Over a period of 2 years, I setup teams in Bangalore and Palo Alto, focused on designing and building new consumer and enterprise experiences across tablets, web, and mobile platforms.</p>
+
+    <p>Later in HP Software, I built and lead a highly talented product team to design, prototype and build HP Online Business Team\'s SaaS Portal, TechBeacon, HP Marketplace. My team - a mix of Designers, Prototypers, Front End and Full Stack Engineers, were responsible for the ongoing development and maintenance of multiple projects at HP. We worked closely with the other design teams across different geographies to prototype, test and experiment design solutions and ideas that help drive HP Online Business Team\'s sales strategies and campaigns.</p><p>As team, we achieved 300% lift in conversion rate after building capability to “connect the dots” on single customer by developing enterprise-wide view into customer history & campaign performance. Enabled marketing\’s 1000% scaling to billions in annual pipeline (2017) from $10+ millions (2014)</p>'
+    },
+    win: 'The final web based product that was shipped was designed and built from the scratch delivering world class experience that was highly appreciated by companies like Intel, Maxim Integrated, Qualcomm',
+    contribution: 'I established and grew the Methodics\’ design organization to a small team of very talented designers and front end engineers who continued to build great experiences for Methodics\’ customers.'
+    }
+    %}
+    <!DOCTYPE html>
+    <html lang="zxx">
+    
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <title>HP Enterprise</title>
+        {% include "v2/partials/_css-links.html" %}
+    </head>
+    
+    <body>
+        <!-- header part -->
+        {% include "v2/partials/_header.html" %}
+        <!-- header part end -->
+    
+        <!-- banner part -->
+        {% include "v2/partials/_prj-banner.html" %}
+        <!-- breadcrumb part end -->
+    
+        <!-- portfolio content part -->
+        {% include "v2/partials/_prj-intro.html" %}
+        <!-- portfolio content part end -->
+    
+        <!-- video section part here -->
+        {% include "v2/partials/_prj-video.html" %}
+        <!-- video section part end -->
+    
+        <!-- portfolio content part -->
+        {% include "v2/partials/_prj-context.html" %}
+        <!-- portfolio content part end -->
+    
+        <!-- portfolio details gallery -->
+        {% include "v2/partials/_prj-screenshots.html" %}
+        <!-- portfolio details gallery end -->
+
+        <!-- portfolio details gallery -->
+        <section class="portfolio_details_gallery sec_padding">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-sm-10">
+                        <div class="section_tittle mb_55">
+                            <h5 class="wow fadeInDown" data-wow-delay=".3s">Screenshots</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 col-sm-12">
+                        <div class="portfolio_details_img">
+                            <img src="img/prj-scrshots/1-prj-bitmex-desktop-3.png" alt="#" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-sm-12">
+                        <div class="portfolio_details_img">
+                            <img src="img/prj-scrshots/2-prj-bitmex-desktop-3.png" alt="#" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-sm-12">
+                        <div class="portfolio_details_img">
+                            <img src="img/prj-scrshots/3-prj-bitmex-desktop-3.png" alt="#" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-sm-12">
+                        <div class="portfolio_details_img">
+                            <img src="img/prj-scrshots/4-prj-bitmex-desktop-3.png" alt="#" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio_details_shape" data-parallax='{"x": 0, "y": 100}'>
+                <img src="img/icon/testimonial_icon_3.png" alt="#" class="wow fadeInRight" data-wow-delay=".3s">
+            </div>
+        </section>
+        <!-- portfolio details gallery -->
+    
+        <!-- testimonial part here -->
+        {% include "v2/partials/_prj-wins.html" %}
+        <!-- testimonial part end -->
+    
+        <!-- footer part here -->
+        {% include "v2/partials/_footer.html" %}
+        <!-- footer part end -->
+    
+        <!-- jquery slim -->
+        <script src="js/jquery-3.5.1.min.js"></script>
+        <!-- popper js -->
+        <script src="js/popper.min.js"></script>
+        <!-- bootstarp js -->
+        <script src="js/bootstrap.min.js"></script>
+        <!-- owl carousel js -->
+        <script src="vendors/owl_carousel/js/owl.carousel.min.js"></script>
+        <!--magnific popup js -->
+        <script src="vendors/magnify_popup/jquery.magnific-popup.js"></script>
+        <!-- parallax js -->
+        <script src="vendors/parallax/jquery.parallax-scroll.js"></script>
+        <script src="vendors/parallax/parallax.js"></script>
+        <script src="vendors/parallax/breadctumb_parallax.js"></script>
+        <!-- wow js -->
+        <script src="vendors/wow/wow.min.js"></script>
+        <!-- imagesloaded js -->
+        <script src="vendors/imagesloaded/imagesloaded.pkgd.min.js"></script>
+        <!-- custom js -->
+        <script src="js/custom.js"></script>
+    </body>
+    
+    </html>
