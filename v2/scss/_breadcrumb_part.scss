@@ -8,6 +8,12 @@
     }
     @media #{$tab}{
         height: 300px;
+        &.bg_7{
+            background-position: left !important;
+        }
+        &.bg_8{
+            background-position: left !important;
+        }
     }
     @media #{$tab_device}{
         height: 400px;

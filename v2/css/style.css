@@ -6394,7 +6394,11 @@ button:focus {
       height: 350px; } }
   @media (max-width: 991px) {
     .breadcrumb_part {
-      height: 300px; } }
+      height: 300px; }
+      .breadcrumb_part.bg_7 {
+        background-position: left !important; }
+      .breadcrumb_part.bg_8 {
+        background-position: left !important; } }
   @media only screen and (min-width: 768px) and (max-width: 991.98px) {
     .breadcrumb_part {
       height: 400px; } }
