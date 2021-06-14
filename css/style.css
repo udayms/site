@@ -3904,6 +3904,9 @@ button:focus {
   z-index: 1;
   padding-top: 120px !important;
   padding-bottom: 0px !important; }
+  .portfolio_section .subheading_padding {
+    padding-top: 120px;
+    padding-bottom: 0px; }
   .portfolio_section .portfolio_shape {
     position: absolute;
     bottom: 150px;
@@ -6426,17 +6429,17 @@ button:focus {
     background-repeat: no-repeat;
     background-size: cover; }
   .breadcrumb_part.bg_7 {
-    background-image: url("../img/breadcrumb_bg/team_breadcrumg.png");
+    background-image: url("../img/banner_img/bnr-hpe.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; }
   .breadcrumb_part.bg_8 {
-    background-image: url("../img/breadcrumb_bg/team_breadcrumg_1.png");
+    background-image: url("../img/banner_img/bnr-yahoo.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; }
   .breadcrumb_part.bg_9 {
-    background-image: url("../img/breadcrumb_bg/contact_classic_bg.png");
+    background-image: url("../img/banner_img/bnr-nokia.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; }
@@ -6678,7 +6681,9 @@ button:focus {
     font-size: 72px;
     color: #fff;
     margin-top: 7px;
-    text-shadow: 1px 1px #333; }
+    text-shadow: 1px 1px #333;
+    stroke-color: #ccc;
+    stroke-width: 0.5px; }
     @media (max-width: 991px) {
       .breadcrumb_part.portfolio_breadcrumb h3 {
         font-size: 35px; } }
